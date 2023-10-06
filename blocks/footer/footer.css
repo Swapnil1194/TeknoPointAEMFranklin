@@ -37,3 +37,13 @@ footer .footer p {
   line-height: 26px;
   letter-spacing: -1px;
 }
+
+.main-blog-wrapper .blogs-order-list{
+  padding: 0;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-family: 'helveticaregular', sans-serif;
+  line-height: 28px;
+  color: #373737;
+}
