@@ -34,3 +34,8 @@ var blogOrderList = document.querySelector('.main-blog-wrapper').querySelectorAl
 for (var i=0; i<blogOrderList.length; i++){
     blogOrderList[i].classList.add('blogs-order-list');
 }
+
+var blogUnrderList = document.querySelector('.main-blog-wrapper').querySelectorAll('.default-content-wrapper')[1].querySelectorAll('ul');
+for (i=0; i<blogUnrderList.length; i++){
+    blogUnrderList[i].classList.add('blogs-unorder-list');
+}
