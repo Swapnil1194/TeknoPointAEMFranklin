@@ -29,3 +29,11 @@ footer .footer p {
   letter-spacing: -1.28px;
   margin-bottom: 0;
 }
+
+.main-blog-wrapper .default-content-wrapper .blogs-sub-heading{
+  color: #333;
+  font-family: "Inter",sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: -1px;
+}
