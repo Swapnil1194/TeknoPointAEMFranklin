@@ -39,3 +39,5 @@ var blogUnrderList = document.querySelector('.main-blog-wrapper').querySelectorA
 for (i=0; i<blogUnrderList.length; i++){
     blogUnrderList[i].classList.add('blogs-unorder-list');
 }
+
+document.querySelector('.main-blog-wrapper').querySelectorAll('.default-content-wrapper')[2].classList.add('blog-disclaimer');
