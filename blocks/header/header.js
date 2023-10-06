@@ -11,6 +11,17 @@ let headerShow = function(url) {
 
 }
 
+let footerShow = function(url) {
+    run(url).then( function(response){
+        var getFooter = document.querySelector('.footer-wrapper > div');
+        var html = document.createElement("html");
+        html.innerHTML = response;
+        var aemGrid = html.querySelector(".aem-Grid");
+        getFooter.innerHTML = aemGrid.innerHTML; 
+    })
+
+}
+
 let  run =  function(urlValue) {
     return new Promise( (resolve, reject) => {
         // Creating Our XMLHttpRequest object 
@@ -29,7 +40,7 @@ let  run =  function(urlValue) {
     })
 }
 headerShow('https://qa.tataaia.com/content/experience-fragments/tataaia_life_insuran/en/aem_demo/xfheader/master.html');
-headerShow('https://qa.tataaia.com/content/experience-fragments/tataaia_life_insuran/en/aem_demo/xffooter/master.html');
+footerShow('https://qa.tataaia.com/content/experience-fragments/tataaia_life_insuran/en/aem_demo/xffooter/master.html');
 
 
 
