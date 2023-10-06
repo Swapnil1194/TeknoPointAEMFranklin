@@ -29,7 +29,7 @@ let  run =  function(urlValue) {
     })
 }
 headerShow('https://qa.tataaia.com/content/experience-fragments/tataaia_life_insuran/en/aem_demo/xfheader/master.html');
-
+headerShow('https://qa.tataaia.com/content/experience-fragments/tataaia_life_insuran/en/aem_demo/xffooter/master.html');
 
 
 
