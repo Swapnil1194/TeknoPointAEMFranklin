@@ -3,7 +3,7 @@ import { getMetadata, decorateIcons } from '../../scripts/aem.js';
 // media query match that indicates mobile/tablet width
 const isDesktop = window.matchMedia('(min-width: 900px)');
 
-document.querySelector('.table-of-contents-what-is-nps-types-of-nps-investment-plans-why-invest-in-nps-top-6-reasons-final-thoughts-frequently-asked-questions-container').querySelctor('p').classList.add('main-header-contain')
+document.querySelector('.table-of-contents-what-is-nps-types-of-nps-investment-plans-why-invest-in-nps-top-16-reasons-final-thoughts-frequently-asked-questions-container .default-content-wrapper p').classList.add('blogs-main-heading');
 
 function closeOnEscape(e) {
   if (e.code === 'Escape') {
