@@ -26,8 +26,5 @@ export default async function decorate(block) {
 
 document.querySelector('main').classList.add('main-blog-wrapper');
 
-var blogHeaderSection = document.querySelector('.table-of-contents-what-is-nps-types-of-nps-investment-plans-why-invest-in-nps-top-6-reasons-final-thoughts-frequently-asked-questions-container .default-content-wrapper p');
-blogHeaderSection.classList.add('blogs-main-heading');
+document.querySelector('.main-blog-wrapper').querySelectorAll('.default-content-wrapper')[1].querySelector('p').classList.add('blogs-main-heading');
 
-var blogSubheading = document.querySelector('.table-of-contents-what-is-nps-types-of-nps-investment-plans-why-invest-in-nps-top-6-reasons-final-thoughts-frequently-asked-questions-container').querySelectorAll('.default-content-wrapper');
-blogSubheading[1].querySelector('p').classList.add('blog-main-subheading');
