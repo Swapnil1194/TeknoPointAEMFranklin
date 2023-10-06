@@ -38,6 +38,10 @@ footer .footer p {
   letter-spacing: -1px;
 }
 
+.main-blog-wrapper .blogs-order-list{
+  padding: 0;
+}
+
 .main-blog-wrapper .blogs-order-list li{
   padding: 0;
   margin-left: 25px;
