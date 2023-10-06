@@ -95,3 +95,7 @@ footer .footer p {
 .main-blog-wrapper .blog-disclaimer ul li::marker{
   color: #4197d3;
 }
+
+.main-blog-wrapper .section{
+  padding: 10px 20px;
+}
