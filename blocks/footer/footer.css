@@ -13,6 +13,14 @@ footer .footer p {
   margin: 0;
 }
 
+.table-of-contents-what-is-nps-types-of-nps-investment-plans-why-invest-in-nps-top-6-reasons-final-thoughts-frequently-asked-questions-container p{
+  font-size: 18px;
+  line-height: 1.56;
+  font-family: 'helveticaregular', sans-serif;
+  letter-spacing: normal;
+  color: #373737;
+}
+
 .table-of-contents-what-is-nps-types-of-nps-investment-plans-why-invest-in-nps-top-6-reasons-final-thoughts-frequently-asked-questions-container .default-content-wrapper .blogs-main-heading{
   color: #333;
   font-family: "Inter", sans-serif;
