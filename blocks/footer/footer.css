@@ -69,3 +69,25 @@ footer .footer p {
 .main-blog-wrapper .blogs-unorder-list li::marker{
   color: #4197d3;
 }
+
+.main-blog-wrapper .blog-disclaimer .blog-disclaimer-heading{
+  font-size: 20px;
+  color: #333;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  font-family: 'Inter', sans-serif;
+}
+
+.main-blog-wrapper .blog-disclaimer ul{
+  padding: 0;
+}
+
+.main-blog-wrapper .blog-disclaimer ul li{
+  color: #333;
+  font-family: 'helveticaregular', sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.126px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
