@@ -52,6 +52,10 @@ footer .footer p {
   color: #373737;
 }
 
+.main-blog-wrapper .blogs-unorder-list{
+  padding: 0;
+}
+
 .main-blog-wrapper .blogs-unorder-list li{
   padding: 0;
   margin-left: 25px;
