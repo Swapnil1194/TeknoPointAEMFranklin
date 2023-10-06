@@ -99,3 +99,39 @@ footer .footer p {
 .main-blog-wrapper .section{
   padding: 10px 20px;
 }
+
+
+/* xf header css start */
+.xf-header-sec {
+    display: flex;
+    padding: 20px 30px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 3px 6px 14px 0 rgba(0, 115, 187, 0.1);
+}
+
+.xf-header-sec-wrapper{
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.xf-header-logo {
+    width: 100px;
+    height: 41px;
+}
+
+@media screen and (max-width: 768px) {
+    .xf-header-sec {
+        padding: 16px 20px;
+    }
+
+    .xf-header-logo {
+        width: 70px;
+        height: 30px;
+    }
+}
+/* xf header css end */
