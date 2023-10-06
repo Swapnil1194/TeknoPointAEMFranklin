@@ -41,3 +41,5 @@ for (i=0; i<blogUnrderList.length; i++){
 }
 
 document.querySelector('.main-blog-wrapper').querySelectorAll('.default-content-wrapper')[2].classList.add('blog-disclaimer');
+
+document.querySelector('.main-blog-wrapper').querySelectorAll('.default-content-wrapper')[2].querySelector('p').classList.add('blog-disclaimer-heading');
