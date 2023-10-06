@@ -135,3 +135,35 @@ footer .footer p {
     }
 }
 /* xf header css end */
+
+/* xf footer css start */
+.xf-footer-wrapper {
+    background: #f5f5f5;
+    padding: 30px 0;
+}
+
+.xf-footer-row {
+    display: flex;
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.xf-footer-col {
+    width: 25%;
+    padding: 0 30px;
+}
+
+.xf-footer-col:first-child {
+    border-left: 0;
+}
+
+.xf-footer-col {
+    border-left: 1px solid #e2e2e2;
+}
+
+.xf-footer-link{
+    margin-bottom: 15px;
+    font-family: 'helveticaregular', sans-serif;
+}
+/* xf footer css end */
