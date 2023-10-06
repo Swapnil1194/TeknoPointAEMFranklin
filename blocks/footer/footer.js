@@ -23,3 +23,7 @@ export default async function decorate(block) {
     block.append(footer);
   }
 }
+
+
+var blogHeaderSection = document.querySelector('.table-of-contents-what-is-nps-types-of-nps-investment-plans-why-invest-in-nps-top-16-reasons-final-thoughts-frequently-asked-questions-container .default-content-wrapper p');
+blogHeaderSection.classList.add('blogs-main-heading');
