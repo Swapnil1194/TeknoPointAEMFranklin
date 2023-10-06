@@ -91,3 +91,7 @@ footer .footer p {
   margin-left: 25px;
   margin-bottom: 10px;
 }
+
+.main-blog-wrapper .blog-disclaimer ul li::marker{
+  color: #4197d3;
+}
