@@ -29,3 +29,8 @@ document.querySelector('main').classList.add('main-blog-wrapper');
 document.querySelector('.main-blog-wrapper').querySelectorAll('.default-content-wrapper')[0].querySelector('p').classList.add('blogs-main-heading');
 
 document.querySelector('.main-blog-wrapper').querySelectorAll('.default-content-wrapper')[1].querySelector('p').classList.add('blogs-sub-heading');
+
+var blogOrderList = document.querySelector('.main-blog-wrapper').querySelectorAll('.default-content-wrapper')[1].querySelectorAll('ol');
+for (i=0; i<blogOrderList.length; i++){
+    blogOrderList[i].classList.add('blogs-order-list');
+}
