@@ -31,6 +31,6 @@ document.querySelector('.main-blog-wrapper').querySelectorAll('.default-content-
 document.querySelector('.main-blog-wrapper').querySelectorAll('.default-content-wrapper')[1].querySelector('p').classList.add('blogs-sub-heading');
 
 var blogOrderList = document.querySelector('.main-blog-wrapper').querySelectorAll('.default-content-wrapper')[1].querySelectorAll('ol');
-for (i=0; i<blogOrderList.length; i++){
+for (var i=0; i<blogOrderList.length; i++){
     blogOrderList[i].classList.add('blogs-order-list');
 }
