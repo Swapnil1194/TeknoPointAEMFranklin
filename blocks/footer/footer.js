@@ -26,7 +26,6 @@ export default async function decorate(block) {
 
 document.querySelector('main').classList.add('main-blog-wrapper');
 
-
 let faq_ul_wrapper = document.querySelector(".blog-faq .default-content-wrapper");
 
 let faq_ul = faq_ul_wrapper.querySelector('ul');
@@ -52,21 +51,3 @@ let faq_accordion = document.querySelectorAll(".blog-faq-list");
     }
   });
 });
-
-// document.querySelector('.main-blog-wrapper').querySelectorAll('.default-content-wrapper')[0].querySelector('p').classList.add('blogs-main-heading');
-
-// document.querySelector('.main-blog-wrapper').querySelectorAll('.default-content-wrapper')[1].querySelector('p').classList.add('blogs-sub-heading');
-
-// var blogOrderList = document.querySelector('.main-blog-wrapper').querySelectorAll('.default-content-wrapper')[1].querySelectorAll('ol');
-// for (var i=0; i<blogOrderList.length; i++){
-//     blogOrderList[i].classList.add('blogs-order-list');
-// }
-
-// var blogUnrderList = document.querySelector('.main-blog-wrapper').querySelectorAll('.default-content-wrapper')[1].querySelectorAll('ul');
-// for (i=0; i<blogUnrderList.length; i++){
-//     blogUnrderList[i].classList.add('blogs-unorder-list');
-// }
-
-// document.querySelector('.main-blog-wrapper').querySelectorAll('.default-content-wrapper')[2].classList.add('blog-disclaimer');
-
-// document.querySelector('.main-blog-wrapper').querySelectorAll('.default-content-wrapper')[2].querySelector('p').classList.add('blog-disclaimer-heading');
