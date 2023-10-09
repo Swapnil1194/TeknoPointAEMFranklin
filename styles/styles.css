@@ -1141,7 +1141,11 @@ label.fixed-label {
 .ta-nav-link {
   font-family: "HelveticaNeueLTStd-Bd", sans-serif;
   font-size: 14px;
-  color: #58595b
+  color: #58595b !important;
+}
+
+.ta-navbar-brand{
+  display: none;
 }
 
 .ta-nav-link.--light {
