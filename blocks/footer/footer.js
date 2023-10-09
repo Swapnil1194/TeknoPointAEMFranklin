@@ -27,31 +27,31 @@ export default async function decorate(block) {
 document.querySelector('main').classList.add('main-blog-wrapper');
 
 
-var faq_ul_wrapper = document.querySelector(".blog-faq .default-content-wrapper");
-  
-var faq_ul = faq_ul_wrapper.querySelector('ul');
-  
-var faq_ul_li = faq_ul.children;
+let faq_ul_wrapper = document.querySelector(".blog-faq .default-content-wrapper");
 
-for (var i=0; i<faq_ul_li.length; i++){
+let faq_ul = faq_ul_wrapper.querySelector('ul');
+
+let faq_ul_li = faq_ul.children;
+
+for (let i = 0; i < faq_ul_li.length; i++) {
   faq_ul_li[i].classList.add("blog-faq-list");
 }
 
-var faq_accordion = document.querySelectorAll(".blog-faq-list");
+let faq_accordion = document.querySelectorAll(".blog-faq-list");
 
 
-  [...faq_accordion].forEach((i) => {
-    i.addEventListener("click", function(){
-      faq_accordion.forEach((i) => { i.querySelector('ul').style.display = 'none' });
-      if(this.querySelector('ul').style.display == "block"){
-        this.querySelector('ul').style.display = 'none';
-        this.querySelector('ul').style.transition = "all 1s ease-out 2s";
-      }else{
-        this.querySelector('ul').style.display = "block"
-        this.querySelector('ul').style.transition = "all 1s ease-in 2s";
-      }
-    });
+[...faq_accordion].forEach((i) => {
+  i.addEventListener("click", function () {
+    faq_accordion.forEach((i) => { i.querySelector('ul').style.display = 'none' });
+    if (this.querySelector('ul').style.display == "block") {
+      this.querySelector('ul').style.display = 'none';
+      this.querySelector('ul').style.transition = "all 1s ease-out 2s";
+    } else {
+      this.querySelector('ul').style.display = "block";
+      this.querySelector('ul').style.transition = "all 1s ease-in 2s";
+    }
   });
+});
 
 // document.querySelector('.main-blog-wrapper').querySelectorAll('.default-content-wrapper')[0].querySelector('p').classList.add('blogs-main-heading');
 
