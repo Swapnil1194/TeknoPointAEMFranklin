@@ -70,6 +70,13 @@ footer .footer p {
   color: #4197d3;
 }
 
+.main-blog-wrapper .blog-disclaimer{
+    border: 1.5px solid #ebf4fa;
+    box-shadow: 0 8px 16px 0 rgba(0,115,187,0.10);
+    padding: 24px 30px;
+    border-radius: 20px;
+}
+
 .main-blog-wrapper .blog-disclaimer .blog-disclaimer-heading{
   font-size: 24px;
   color: #333;
