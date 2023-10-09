@@ -77,8 +77,12 @@ footer .footer p {
     border-radius: 20px;
 }
 
-.main-blog-wrapper .blog-disclaimer ul p:not(.blog-disclaimer-heading){
+.main-blog-wrapper .blog-disclaimer ul p{
     display: none;
+}
+
+.main-blog-wrapper .blog-disclaimer ul p.blog-disclaimer-heading{
+    display: block;
 }
 
 .main-blog-wrapper .blog-disclaimer .blog-disclaimer-heading{
