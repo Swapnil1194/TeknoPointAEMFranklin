@@ -77,6 +77,10 @@ footer .footer p {
     border-radius: 20px;
 }
 
+.main-blog-wrapper .blog-disclaimer ul p:not(.blog-disclaimer-heading){
+    display: none;
+}
+
 .main-blog-wrapper .blog-disclaimer .blog-disclaimer-heading{
   font-size: 24px;
   color: #333;
