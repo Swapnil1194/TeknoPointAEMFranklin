@@ -261,6 +261,7 @@
   /* Blog Page CSS end */
   
   /* blog form css start */
+
   .list-li-2{
     padding: 15px 20px;
     margin-top: 20px;
@@ -268,5 +269,13 @@
     border: 1px solid #daeef8;
     box-shadow: 3px 6px 14px rgba(0,115,187,0.1);
     border-radius: 20px;
+  }
+
+  .list-li-2 h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333;
   }
   /* blog form css end */
