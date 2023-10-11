@@ -314,5 +314,10 @@
     font-size: 16px;
     line-height: 16px;
     padding: 9px 0;
+    cursor: pointer;
+  }
+
+  .input-field select option{
+    cursor: pointer;
   }
   /* blog form css end */
