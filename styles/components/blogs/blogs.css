@@ -262,6 +262,18 @@
   
   /* blog form css start */
 
+  .dsp-none{
+    display: none;
+  }
+
+  .err-msg{
+    font-size: 14px;
+    color: #d62049;
+    margin-top: 11px;
+    display: inline-block;
+    font-style: oblique;
+  }
+
   .list-li-2{
     padding: 15px 20px;
     margin-top: 20px;
@@ -277,6 +289,7 @@
     font-size: 18px;
     line-height: 22px;
     color: #333;
+    margin-bottom: 15px;
   }
   .input-field{
     display: flex;
@@ -319,5 +332,25 @@
 
   .input-field select option{
     cursor: pointer;
+  }
+
+  .blog-form-submit{
+    width: 100%;
+    padding: 12px 0;
+    background: #d62049;
+    border: 0.833333px solid #d62049;
+    box-shadow: 0 0 8px rgba(214,32,73,0.1);
+    border-radius: 8.33333px;
+    font-family: "HelveticaNeueLTStd-Md";
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: normal;
+    color: #fff;
+  }
+
+  .blog-form-submit:hover{
+    background: #d62049;
+    border: 0.833333px solid #d62049;
   }
   /* blog form css end */
