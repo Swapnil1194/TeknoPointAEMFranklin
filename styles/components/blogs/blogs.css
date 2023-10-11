@@ -260,5 +260,13 @@
   }
   /* Blog Page CSS end */
   
-  
-  
+  /* blog form css start */
+  .list-li-2{
+    padding: 15px 20px;
+    margin-top: 20px;
+    background: #fff;
+    border: 1px solid #daeef8;
+    box-shadow: 3px 6px 14px rgba(0,115,187,0.1);
+    border-radius: 20px;
+  }
+  /* blog form css end */
