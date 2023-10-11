@@ -75,9 +75,8 @@ let faq_accordion = document.querySelectorAll(".blog-faq-list");
       this.querySelector('ul').style.transition = "all 1s ease-out 2s";
     } else {
       faq_accordion.forEach((i) => { 
-        debugger;
         i.querySelector('ul').style.display = 'none'; 
-        i.querySelector('ul > li').classList.remove("active"); 
+        i.classList.remove("active"); 
       });
       this.querySelector('ul').style.display = "block";
       this.classList.add("active");
