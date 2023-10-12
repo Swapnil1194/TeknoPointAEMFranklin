@@ -293,30 +293,72 @@ blogSbuBtn.addEventListener("click", function(e){
   var leadEmail = form.querySelector("#leadEmail").value;
   var leadPlan = form.querySelector("#leadPlan").value;
 
-var data = JSON.stringify({
-  "name": leadName,
-  "mobileNumber": leadNumber
-});
+  var reqObj = {
+    "requestJson": {
+        "name": leadName,
+        "mobileNumber": leadNumber,
+        "emailAddress": leadEmail,
+        "comments": leadPlan,
+    },
+    "token": {}
+};
 
 var xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
 
 xhr.addEventListener("readystatechange", function() {
-  if(this.readyState === 4) {
-    console.log(this.responseText);
+
+  if(this.readyState === 1) {
+      var response = {
+        "statusCode": 200,
+        "successMsg": "success",
+        "responseJson": {
+            "status": 200,
+            "message": "Success",
+            "data": {
+                "message": "Success",
+                "leadId": "536365"
+            }
+        }
+    }
+
+    return response;
+
   }
+  /* if(this.readyState === 4) {
+    console.log(this.responseText);
+  } */
 });
 
-xhr.open("POST", "https://webapiuat.tataaia.com/create_lead/createLead");
+xhr.open("POST", "http://localhost:4504/content/tataaialifeinsurancecompanylimited/api/callcreateLead");
 xhr.setRequestHeader("ClientID", "kJbc1W1YupprLcB8YZE0gla1T8APG3Mf");
 xhr.setRequestHeader("UID", "b10cbb75fd877a84a5c719e52bb921358014aee1");
 xhr.setRequestHeader("RequestTime", "1697097006323");
 xhr.setRequestHeader("Content-Type", "application/json");
 
-xhr.send(data);
+xhr.send(reqObj);
 });
 
 /* blog form create lead call end */
 
 
 
+/* table of content js start */
+
+var table_content_list = document.querySelectorAll(".blog-table-content ul li a");
+for(var i=0; i<table_content_list.length; i++){
+  table_content_list[i].addEventListener("click", function(e){
+    e.preventDefault();
+    var href = this.getAttribute("href");
+    var targetElement = document.querySelector(href);
+
+    var target = targetElement.getBoundingClientRect().top + window.scrollY - 100;
+
+    window.scrollTo({
+      top: target,
+      behavior: 'smooth'
+    });
+
+  });
+}
+/* table of content js end */
