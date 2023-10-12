@@ -1,146 +1,382 @@
 /* Blog Page CSS start */
 
-.main-blog-wrapper{
-    position: relative;
-  }
-  
-  .w-65 .default-content-wrapper{
-    width: 70%;
-  }
-  
-  .main-blog-wrapper .section.blog-right-sec{
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding-left: 20px;
-    padding-right: 84px;
-    width: 21%;
-  }
-  
-  .main-blog-wrapper p{
-    font-size: 18px;
-    line-height: 1.56;
-    font-family: 'helveticaregular', sans-serif;
-    letter-spacing: normal;
-    color: #373737;
-    margin-bottom: 20px;
-  }
-  
-  .main-blog-wrapper .blog-banner-wrapper .default-content-wrapper h1{
-    color: #333;
-    font-family: "Inter", sans-serif;
-    font-size: 42px;
-    line-height: 42px;
-    letter-spacing: -1.28px;
-    margin-bottom: 30px;
-  }
-  
-  .main-blog-wrapper .blog-table-of-content .default-content-wrapper h2{
-    color: #333;
-    font-family: "Inter",sans-serif;
-    font-size: 32px;
-    line-height: normal;
-  }
-  
-  .main-blog-wrapper .blog-table-of-content ol{
-    padding: 0;
-  }
-  
-  .main-blog-wrapper .blog-table-of-content ol li{
-    padding: 0;
-    margin-left: 25px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-family: 'helveticaregular', sans-serif;
-    line-height: 28px;
-    color: #373737;
-    list-style: decimal;
-  }
-  
-  .main-blog-wrapper .blog-faq .default-content-wrapper h2{
-    color: #333;
-    font-family: "Inter",sans-serif;
-    font-size: 32px;
-    line-height: normal;
-    margin-bottom: 30px;
-  }
-  
-  .main-blog-wrapper .blog-faq .default-content-wrapper ul .blog-faq-list{
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    color: #333;
-    line-height: normal;
-    margin-bottom: 20px;
-    border: 1.5px solid #ebf4fa;
-    box-shadow: 0 8px 16px 0 rgba(0,115,187,0.10);
-    padding: 24px 30px;
-    border-radius: 20px;
-    cursor: pointer;
-    position: relative;
-  }
-  
-  .main-blog-wrapper .blog-faq .default-content-wrapper ul .blog-faq-list::after{
-    content: '';
-    position: absolute;
-    right: 30px;
-    height: 12px;
-    width: 20px;
-    top: 30px;
-    background-image: url('https://www.tataaia.com/content/dam/tataaia/chevron/sm-chevron-down.png');
-    background-repeat: no-repeat;
-  }
-  
-  .main-blog-wrapper .blog-faq .default-content-wrapper ul .active.blog-faq-list::after{
-    transform: rotate(180deg);
-  }
-  
-  .main-blog-wrapper .blog-faq .default-content-wrapper ul .blog-faq-list ul li{
-    font-size: 18px;
-    font-family: "helveticaregular", sans-serif;
-    line-height: 150%;
-    font-weight: 400;
-    letter-spacing: -0.126px;
-    color: #333;
-  }
-  
-  .main-blog-wrapper .blog-faq .default-content-wrapper ul .blog-faq-list ul{
-    display: none;
-    padding-top: 25px;
-    cursor: default;
-  }
-  
-  .main-blog-wrapper .section.blog-disclaimer {
-    margin-top: 70px;
-    margin-bottom: 100px;
-  }
-  
-  .main-blog-wrapper .blog-disclaimer .default-content-wrapper{
-    border: 1.5px solid #ebf4fa;
-    box-shadow: 0 8px 16px 0 rgba(0,115,187,0.10);
-    padding: 24px 30px;
-    border-radius: 20px;
-  }
-  
-  .main-blog-wrapper .blog-disclaimer .default-content-wrapper ul, .main-blog-wrapper .blog-disclaimer .default-content-wrapper p {
-    display: none;
-  }
-  
-  .main-blog-wrapper .blog-disclaimer .default-content-wrapper.active ul, .main-blog-wrapper .blog-disclaimer .default-content-wrapper.active p {
-    display: block;
-    cursor: default;
-  }
-  
+.main-blog-wrapper {
+  position: relative;
+}
+
+.w-65 .default-content-wrapper {
+  width: 70%;
+}
+
+.main-blog-wrapper .section.blog-right-sec {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-left: 20px;
+  padding-right: 84px;
+  width: 21%;
+}
+
+.main-blog-wrapper p {
+  font-size: 18px;
+  line-height: 1.56;
+  font-family: 'helveticaregular', sans-serif;
+  letter-spacing: normal;
+  color: #373737;
+  margin-bottom: 20px;
+}
+
+.main-blog-wrapper .blog-banner-wrapper .default-content-wrapper h1 {
+  color: #333;
+  font-family: "Inter", sans-serif;
+  font-size: 42px;
+  line-height: 42px;
+  letter-spacing: -1.28px;
+  margin-bottom: 30px;
+}
+
+.main-blog-wrapper .blog-table-of-content .default-content-wrapper h2 {
+  color: #333;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  line-height: normal;
+}
+
+.main-blog-wrapper .blog-table-of-content ol {
+  padding: 0;
+}
+
+.main-blog-wrapper .blog-table-of-content ol li {
+  padding: 0;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: 'helveticaregular', sans-serif;
+  line-height: 28px;
+  color: #373737;
+  list-style: decimal;
+}
+
+.main-blog-wrapper .blog-faq .default-content-wrapper h2 {
+  color: #333;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+.main-blog-wrapper .blog-faq .default-content-wrapper ul .blog-faq-list {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  line-height: normal;
+  margin-bottom: 20px;
+  border: 1.5px solid #ebf4fa;
+  box-shadow: 0 8px 16px 0 rgba(0, 115, 187, 0.10);
+  padding: 24px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.main-blog-wrapper .blog-faq .default-content-wrapper ul .blog-faq-list::after {
+  content: '';
+  position: absolute;
+  right: 30px;
+  height: 12px;
+  width: 20px;
+  top: 30px;
+  background-image: url('https://www.tataaia.com/content/dam/tataaia/chevron/sm-chevron-down.png');
+  background-repeat: no-repeat;
+}
+
+.main-blog-wrapper .blog-faq .default-content-wrapper ul .active.blog-faq-list::after {
+  transform: rotate(180deg);
+}
+
+.main-blog-wrapper .blog-faq .default-content-wrapper ul .blog-faq-list ul li {
+  font-size: 18px;
+  font-family: "helveticaregular", sans-serif;
+  line-height: 150%;
+  font-weight: 400;
+  letter-spacing: -0.126px;
+  color: #333;
+}
+
+.main-blog-wrapper .blog-faq .default-content-wrapper ul .blog-faq-list ul {
+  display: none;
+  padding-top: 25px;
+  cursor: default;
+}
+
+.main-blog-wrapper .section.blog-disclaimer {
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.main-blog-wrapper .blog-disclaimer .default-content-wrapper {
+  border: 1.5px solid #ebf4fa;
+  box-shadow: 0 8px 16px 0 rgba(0, 115, 187, 0.10);
+  padding: 24px 30px;
+  border-radius: 20px;
+}
+
+.main-blog-wrapper .blog-disclaimer .default-content-wrapper ul,
+.main-blog-wrapper .blog-disclaimer .default-content-wrapper p {
+  display: none;
+}
+
+.main-blog-wrapper .blog-disclaimer .default-content-wrapper.active ul,
+.main-blog-wrapper .blog-disclaimer .default-content-wrapper.active p {
+  display: block;
+  cursor: default;
+}
+
+.main-blog-wrapper .section {
+  padding: 10px 20px;
+  max-width: 1366px;
+  width: 100%;
+  padding: 0 84px;
+  margin: 0 auto;
+}
+
+.main-blog-wrapper .blog-disclaimer .default-content-wrapper {
+  cursor: pointer;
+}
+
+.main-blog-wrapper .blog-disclaimer .default-content-wrapper h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  line-height: normal;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.main-blog-wrapper .blog-disclaimer .default-content-wrapper ul {
+  margin-top: 30px;
+}
+
+.main-blog-wrapper .blog-disclaimer .default-content-wrapper ul li {
+  color: #333;
+  font-family: "helveticaregular";
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.126px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  list-style: disc;
+}
+
+.main-blog-wrapper .blog-disclaimer .default-content-wrapper ul li::marker {
+  color: #4197d3;
+}
+
+
+.main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-0 {
+  padding: 24px 20px 20px 20px;
+  background: #fff;
+  border: 1px solid #daeef8;
+  box-sizing: border-box;
+  box-shadow: 3px 6px 14px rgba(0, 115, 187, 0.1);
+  border-radius: 20px;
+}
+
+.main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-0 h4 {
+  margin-bottom: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333;
+}
+
+.main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-0 ul li,
+.main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-0 ul li a {
+  margin-bottom: 8px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333;
+}
+
+.main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-0 ul li {
+  position: relative;
+  padding-left: 12px;
+}
+
+.main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-0 ul li::before {
+  height: 100%;
+  top: 4px;
+  left: 0;
+  position: absolute;
+  border-left: 2px solid #91c4ea;
+  content: "";
+}
+
+.main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-1 {
+  padding: 24px 20px 20px 20px;
+  background: #fff;
+  border: 1px solid #daeef8;
+  box-sizing: border-box;
+  box-shadow: 3px 6px 14px rgba(0, 115, 187, 0.1);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-1 h4 {
+  margin-bottom: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333;
+}
+
+.main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-1 ul li {
+  padding: 13px 0;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-1 ul li a {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.266667px;
+  color: #333;
+  position: relative;
+}
+
+.main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-1 ul li a::after {
+  content: '';
+  width: 15px;
+  height: 13px;
+  background: url('https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blog/browse-arrow.png') no-repeat;
+  display: block;
+  position: absolute;
+  right: -24px;
+  top: 5px;
+}
+
+/* Blog Page CSS end */
+
+/* blog form css start */
+
+.dsp-none {
+  display: none;
+}
+
+.dsp-block {
+  display: block;
+}
+
+.err-msg {
+  font-size: 14px;
+  color: #d62049;
+  margin-top: 11px;
+  font-style: oblique;
+}
+
+.list-li-2 {
+  padding: 15px 20px;
+  margin-top: 20px;
+  background: #fff;
+  border: 1px solid #daeef8;
+  box-shadow: 3px 6px 14px rgba(0, 115, 187, 0.1);
+  border-radius: 20px;
+}
+
+.list-li-2 h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-field label {
+  font-family: 'helveticaregular', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  color: #333;
+}
+
+.input-field input {
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #e6e7e8;
+  font-family: "HelveticaNeueLTStd-Md";
+  font-size: 16px;
+  line-height: 16px;
+  padding: 9px 0;
+}
+
+.input-field input::placeholder {
+  color: #d4d7db;
+}
+
+.input-field select {
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #e6e7e8;
+  font-family: "HelveticaNeueLTStd-Md";
+  font-size: 16px;
+  line-height: 16px;
+  padding: 9px 0;
+  cursor: pointer;
+}
+
+.input-field select option {
+  cursor: pointer;
+}
+
+.blog-form-submit {
+  width: 100%;
+  padding: 12px 0;
+  background: #d62049;
+  border: 0.833333px solid #d62049;
+  box-shadow: 0 0 8px rgba(214, 32, 73, 0.1);
+  border-radius: 8.33333px;
+  font-family: "HelveticaNeueLTStd-Md";
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.blog-form-submit:hover {
+  background: #d62049;
+  border: 0.833333px solid #d62049;
+}
+
+
+@media screen and (max-width: 767px){
   .main-blog-wrapper .section{
-    padding: 10px 20px;
-    max-width: 1366px;
-    width: 100%;
-    padding: 0 84px;
-    margin: 0 auto;
+    padding: 0 20px;
   }
-  
-  .main-blog-wrapper .blog-disclaimer .default-content-wrapper{
-    cursor: pointer;
+
+  .w-65 .default-content-wrapper {
+    width: 100%;
+  }
+
+  .main-blog-wrapper .section.blog-right-sec{
+    position: unset;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   
   .main-blog-wrapper .blog-disclaimer .default-content-wrapper h3{

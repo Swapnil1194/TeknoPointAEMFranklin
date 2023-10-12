@@ -7,8 +7,9 @@
 <link as="font" crossorigin="" href="/fonts/HelveticaNeueLTStd-Bd.woff2" rel="preload" type="font/woff2">
 <link as="font" crossorigin="" href="/fonts/HelveticaNeueLTStd-Lt.woff2" rel="preload" type="font/woff2">
 <link as="font" crossorigin="" href="/fonts/HelveticaNeueLTStd-Md.woff2" rel="preload" type="font/woff2">
+<link as="font" crossorigin="" href="/fonts/icomoon.woff?orptfs" rel="preload" type="font/woff">
 <link rel="stylesheet" href="/styles/styles.css"/>
-<link rel="stylesheet" href="/styles/common.css"/>
+<link rel="stylesheet" href="./styles/icomoon.css"/>
 <link rel="stylesheet" href="./styles/components/footer/footer.css"/>
 <link rel="stylesheet" href="./styles/components/header/header.css"/>
 <link rel="stylesheet" href="./styles/components/blogs/blogs.css"/>
@@ -257,12 +258,7 @@
             <li class="ta-nav-item"> <a class="ta-nav-icon ta-nav-icon-text" id="search-popup-f"
                     href="javascript:void(0)"> <i class="icon-search"></i> <span>Search</span> </a> </li>
             <li class="ta-nav-item ta-call-btn-mob"> <a class="ta-nav-icon ta-nav-icon-text" href="javascript:void(0)">
-                    <picture>
-                        <source media="(max-width:768px)"
-                            srcset="https://stage.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/headersupportcallimages/call-icon-black.svg">
-                        <img src="" class="call-icn-wh-ht" alt="Call Icon" title="Call Icon">
-                    </picture>
-                    <!-- <img class="call-icn-wh-ht" src="https://stage.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/headersupportcallimages/call-icon-black.svg" alt="Call Icon" title="Call Icon"> -->
+                    <img src="https://stage.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/headersupportcallimages/call-icon-black.svg" class="call-icn-wh-ht" alt="Call Icon" title="Call Icon">
                     <span class="call-us-txt">Call Us</span>
                 </a> </li>
             <li class="ta-nav-item --is-relative"> <a class="ta-nav-icon ta-nav-link ta-nav-icon-text"
@@ -295,23 +291,40 @@
                     </div>
                 </div>
             </li>
-            <li class="ta-nav-item ta-lang-item"> <a class="ta-nav-icon ta-nav-link ta-nav-icon-text"
-                    href="javascript:void(0)">
-                     <span>Language</span> </a>
-                <div class="language-pop-up">
-                    <ul>
-                        <li> <a href="/content/tataaialifeinsurancecompanylimited/hi-in/homepage.html"
-                                class="hin-eng-redirect">
-                                <picture>
-                                    <source media="(min-width:768px)"
-                                        srcset="https://stage.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/hindiBold.svg">
-                                    <img src="" alt="hindi.svg">
-                                </picture>
-                                <!-- हिंदी -->
-                            </a> </li>
-                    </ul>
-                </div>
-            </li>
         </ul>
     </nav>
+</div>
+
+<div class="list-li-2">
+    <h3>Looking for a financial solution to save tax? Speak to our expert</h3>
+    <form class="blog-lead-form">
+        <div class="input-field">
+            <label>Name</label>
+            <input type="text" id="leadName" placeholder="Enter Full Name">
+            <p class="err-msg dsp-none">Please Enter Full Name</p>
+        </div>
+        <div class="input-field">
+            <label>Mobile Number</label>
+            <input type="text" id="leadNumber" maxlength="10" placeholder="Enter Mobile Number">
+            <p class="err-msg dsp-none">Please enter valid mobile number</p>
+        </div>
+        <div class="input-field">
+            <label>Email ID</label>
+            <input type="text" id="leadEmail" placeholder="Enter Email id">
+            <p class="err-msg dsp-none">Please enter valid email ID</p>
+        </div>
+        <div class="input-field">
+            <label>Plan</label>
+            <select id="leadPlan">
+                <option selected disabled hidden>Select Plan</option>
+                <option value="Term Plans">Term Plans</option>
+                <option value="Saving Plans">Saving Plans</option>
+                <option value="Retirement Plans">Retirement Plans</option>
+                <option value="Wealth Plans">Wealth Plans</option>
+                <option value="I don't know / I need help">I don't know / I need help</option>
+            </select>
+            <p class="err-msg dsp-none">Please select the plan</p>
+        </div>
+        <button class="blog-form-submit">Get a call back</button>
+    </form>
 </div>
