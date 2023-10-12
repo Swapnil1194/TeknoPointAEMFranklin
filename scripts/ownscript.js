@@ -1,3 +1,4 @@
+/* Header Footer Start */
 let headerShow = function(url) {
     run(url).then( function(response){
         var getHeader = document.querySelector('.header > div > div');
@@ -44,6 +45,67 @@ window.addEventListener('scroll', function () {
     footerShow('https://qa.tataaia.com/content/experience-fragments/tataaia_life_insuran/en/aem_demo/xffooter/master.html');
 }, {once : true});
 
+/* Header Footer End */
+
+/* Latest Article Start */
+
+document.querySelector('.blog-right-sec > div > div').classList.add('main-table');
+
+var formdata = new FormData();
+formdata.append("data", "{\"requestJson\":{\"pagePath\":\"/knowledge-centre\",\"resultType\":\"latestBlogs\",\"tag\":\"term\",\"limit\":\"5\",\"contributor\":\"\"}}");
+
+var requestOptions = {
+  method: 'POST',
+  body: formdata,
+};
+
+
+const convertStringToHTML = htmlString => {
+    const parser = new DOMParser();
+    const html = parser.parseFromString(htmlString, 'text/html');
+
+    return html.body;
+}
+
+let template;
+
+function populateData (data) {
+    var newData = JSON.parse(data);
+    var renderLI = '';
+    newData.forEach( function (eachData) {
+
+        const pagePath = "http://qa.tataaia.com" + eachData.pagePath;
+        const title= eachData.title;
+        
+        renderLI += '<li><a href='+pagePath +' title='+title+'>'+title+'</a></li>';
+
+    });
+
+    template += `
+            <div class="list-li-0 blog-right-card">
+            <div>
+                <h4 id="related-articles">Latest Articles</h4>
+                <ul class="render-list">
+                    ${renderLI}
+                </ul>
+            </div>
+            </div>
+            `;
+        
+    var tabletoHTML = convertStringToHTML(template);
+    var mainTable = document.querySelector('.main-table');
+    var updatedDiv = tabletoHTML.querySelector('.blog-right-card');
+    mainTable.append(updatedDiv);
+}
+
+fetch("https://stage.tataaia.com/content/tataaialifeinsurancecompanylimited/api/articleblog.json", requestOptions)
+  .then((response) =>  response.text())
+  .then((result) => populateData(result))
+  .catch(error => console.log('error', error));
+
+
+/* Latest Article End */
+
 
 /* Main Class Added to write CSS Start */
 
@@ -85,9 +147,14 @@ let faq_accordion = document.querySelectorAll(".blog-faq-list");
   });
 });
 
+/* FAQ Section Logic End */
+
+/* Discalimer Logic =Start */
+
 function addingClass(a){
   for(var i = 0; i <= a.length -1; i++){
     a[i].classList.add("list-li-" + i);
+    a[i].classList.add('blog-right-card');
   }
 }
 
@@ -101,3 +168,18 @@ blog_disc.addEventListener("click", function(){
 });
 
 /* Discalimer Logic End */
+
+
+/* Header XF Logic Start */
+
+/* Header XF Logic End */
+
+
+
+
+
+
+
+
+
+
