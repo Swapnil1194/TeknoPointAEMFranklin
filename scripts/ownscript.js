@@ -21,7 +21,7 @@ let footerShow = function(url) {
 
 }
 
-let  run =  function(urlValue) {
+let run =  function(urlValue) {
     return new Promise( (resolve, reject) => {
         // Creating Our XMLHttpRequest object 
         let xhr = new XMLHttpRequest();
@@ -80,6 +80,8 @@ function populateData (data) {
         renderLI += '<li><a href='+pagePath +' title='+title+'>'+title+'</a></li>';
 
     });
+
+    // add list-li-0 class when every is needed
 
     template += `
             <div class="list-li-0 blog-right-card">
@@ -171,6 +173,23 @@ blog_disc.addEventListener("click", function(){
 
 
 /* Header XF Logic Start */
+
+let xfHeaderLinks = document.querySelectorAll('.xf-rewamp-frag');
+
+for (let ii = 0; ii < xfHeaderLinks.length; ii++) {
+  
+    var xfLink = xfHeaderLinks[ii].getAttribute('data-fragment');
+    await xfLinkCallBack(xfLink , xfHeaderLinks[ii]);
+    
+}
+
+async function xfLinkCallBack (xfLink, dumpHTML) {
+    var response = await run(xfLink);
+    var html = document.createElement("html");
+    html.innerHTML = response;
+    var aemGrid = html.querySelector(".aem-Grid");
+    dumpHTML.innerHTML = aemGrid.innerHTML;
+}
 
 /* Header XF Logic End */
 
