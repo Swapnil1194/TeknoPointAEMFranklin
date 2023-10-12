@@ -101,9 +101,11 @@ p, dl, pre, blockquote {
   margin-bottom: 1em;
 }
 
-ul, ol{
+ul, ol, li{
   margin-top: 0;
   margin-bottom: 0;
+  list-style: none;
+  padding: 0;
 }
 
 hr {
