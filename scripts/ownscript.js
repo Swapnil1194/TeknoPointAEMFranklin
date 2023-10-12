@@ -260,6 +260,19 @@ async function xfLinkCallBack (xfLink, dumpHTML) {
     dumpHTML.innerHTML = aemGrid.innerHTML;
 }
 
+let headerInnerNav = document.querySelectorAll('.ta-l0-nav-item');
+
+[...headerInnerNav].forEach( function (eachLiItem) {
+  eachLiItem.addEventListener('mouseover', function () {
+      var childrenLI = this.parentElement.children;
+      for (let ii = 0; ii < childrenLI.length; ii++) {
+        childrenLI[ii].classList.remove('active');
+      }
+      this.classList.add('active');
+  });
+});
+
+
 /* Header XF Logic End */
 
 
