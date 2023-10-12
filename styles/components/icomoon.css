@@ -1,0 +1,286 @@
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-awards:before {
+    content: "\e900";
+  }
+  .icon-claim-settlement-ratio .path1:before {
+    content: "\e901";
+    color: rgb(65, 150, 210);
+  }
+  .icon-claim-settlement-ratio .path2:before {
+    content: "\e902";
+    margin-left: -1em;
+    color: rgb(65, 150, 210);
+  }
+  .icon-claim-settlement-ratio .path3:before {
+    content: "\e903";
+    margin-left: -1em;
+    color: rgb(65, 150, 210);
+  }
+  .icon-claim-settlement-ratio .path4:before {
+    content: "\e904";
+    margin-left: -1em;
+    color: rgb(65, 150, 210);
+  }
+  .icon-claim-settlement-ratio .path5:before {
+    content: "\e905";
+    margin-left: -1em;
+    color: rgb(65, 150, 210);
+  }
+  .icon-claim-settlement-ratio .path6:before {
+    content: "\e906";
+    margin-left: -1em;
+    color: rgb(65, 150, 210);
+  }
+  .icon-claim-settlement-ratio .path7:before {
+    content: "\e907";
+    margin-left: -1em;
+    color: rgb(234, 154, 166);
+  }
+  .icon-claim-settlement-ratio .path8:before {
+    content: "\e908";
+    margin-left: -1em;
+    color: rgb(65, 150, 210);
+  }
+  .icon-claim-settlement-ratio .path9:before {
+    content: "\e909";
+    margin-left: -1em;
+    color: rgb(65, 150, 210);
+  }
+  .icon-claim-settlement-ratio .path10:before {
+    content: "\e90a";
+    margin-left: -1em;
+    color: rgb(234, 154, 166);
+  }
+  .icon-claim-settlement-ratio .path11:before {
+    content: "\e90b";
+    margin-left: -1em;
+    color: rgb(234, 154, 166);
+  }
+  .icon-claim-settlement-ratio .path12:before {
+    content: "\e90c";
+    margin-left: -1em;
+    color: rgb(65, 150, 210);
+  }
+  .icon-crorepati:before {
+    content: "\e90d";
+    color: #4197d3;
+  }
+  .icon-download-statement:before {
+    content: "\e90e";
+    color: #4197d3;
+  }
+  .icon-families-protected:before {
+    content: "\e90f";
+    color: #4197d3;
+  }
+  .icon-happy-retired-life:before {
+    content: "\e910";
+    color: #4197d3;
+  }
+  .icon-kid-dreams .path1:before {
+    content: "\e911";
+    color: rgb(65, 151, 211);
+  }
+  .icon-kid-dreams .path2:before {
+    content: "\e912";
+    margin-left: -1em;
+    color: rgb(235, 154, 167);
+  }
+  .icon-kid-dreams .path3:before {
+    content: "\e913";
+    margin-left: -1em;
+    color: rgb(235, 154, 167);
+  }
+  .icon-menu:before {
+    content: "\e914";
+  }
+  .icon-most-trusted-brand .path1:before {
+    content: "\e915";
+    color: rgb(65, 150, 210);
+  }
+  .icon-most-trusted-brand .path2:before {
+    content: "\e916";
+    margin-left: -1em;
+    color: rgb(65, 150, 210);
+  }
+  .icon-most-trusted-brand .path3:before {
+    content: "\e917";
+    margin-left: -1em;
+    color: rgb(234, 154, 166);
+  }
+  .icon-own-dreams .path1:before {
+    content: "\e918";
+    color: rgb(65, 150, 210);
+  }
+  .icon-own-dreams .path2:before {
+    content: "\e919";
+    margin-left: -1em;
+    color: rgb(234, 154, 166);
+  }
+  .icon-own-dreams .path3:before {
+    content: "\e91a";
+    margin-left: -1em;
+    color: rgb(234, 154, 166);
+  }
+  .icon-own-dreams .path4:before {
+    content: "\e91b";
+    margin-left: -1em;
+    color: rgb(234, 154, 166);
+  }
+  .icon-pay-remium:before {
+    content: "\e91c";
+    color: #4197d3;
+  }
+  .icon-quick-action .path1:before {
+    content: "\e91d";
+    color: rgb(0, 0, 0);
+  }
+  .icon-quick-action .path2:before {
+    content: "\e91e";
+    margin-left: -1em;
+    color: rgb(214, 32, 73);
+  }
+  .icon-quick-action .path3:before {
+    content: "\e91f";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .icon-raise-service-request:before {
+    content: "\e920";
+    color: #4197d3;
+  }
+  .icon-register-claim:before {
+    content: "\e921";
+    color: #4197d3;
+  }
+  .icon-sales-services-online .path1:before {
+    content: "\e922";
+    color: rgb(65, 151, 211);
+  }
+  .icon-sales-services-online .path2:before {
+    content: "\e923";
+    margin-left: -1.025390625em;
+    color: rgb(235, 154, 167);
+  }
+  .icon-sales-services-online .path3:before {
+    content: "\e924";
+    margin-left: -1.025390625em;
+    color: rgb(65, 151, 211);
+  }
+  .icon-sales-services-online .path4:before {
+    content: "\e925";
+    margin-left: -1.025390625em;
+    color: rgb(235, 154, 167);
+  }
+  .icon-sales-services-online .path5:before {
+    content: "\e926";
+    margin-left: -1.025390625em;
+    color: rgb(235, 154, 167);
+  }
+  .icon-sales-services-online .path6:before {
+    content: "\e927";
+    margin-left: -1.025390625em;
+    color: rgb(235, 154, 167);
+  }
+  .icon-sales-services-online .path7:before {
+    content: "\e928";
+    margin-left: -1.025390625em;
+    color: rgb(235, 154, 167);
+  }
+  .icon-sales-services-online .path8:before {
+    content: "\e929";
+    margin-left: -1.025390625em;
+    color: rgb(235, 154, 167);
+  }
+  .icon-sales-services-online .path9:before {
+    content: "\e92a";
+    margin-left: -1.025390625em;
+    color: rgb(65, 151, 211);
+  }
+  .icon-sales-services-online .path10:before {
+    content: "\e92b";
+    margin-left: -1.025390625em;
+    color: rgb(65, 151, 211);
+  }
+  .icon-sales-services-online .path11:before {
+    content: "\e92c";
+    margin-left: -1.025390625em;
+    color: rgb(65, 151, 211);
+  }
+  .icon-saplings:before {
+    content: "\e92d";
+    color: #4197d3;
+  }
+  .icon-save-tax:before {
+    content: "\e92e";
+    color: #4197d3;
+  }
+  .icon-search:before {
+    content: "\e92f";
+  }
+  .icon-secure-future .path1:before {
+    content: "\e930";
+    color: rgb(65, 150, 210);
+  }
+  .icon-secure-future .path2:before {
+    content: "\e931";
+    margin-left: -1em;
+    color: rgb(65, 150, 210);
+  }
+  .icon-secure-future .path3:before {
+    content: "\e932";
+    margin-left: -1em;
+    color: none;
+  }
+  .icon-secure-future .path4:before {
+    content: "\e933";
+    margin-left: -1em;
+    color: rgb(234, 154, 166);
+  }
+  .icon-secure-future .path5:before {
+    content: "\e934";
+    margin-left: -1em;
+    color: rgb(234, 154, 166);
+  }
+  .icon-settle-claims .path1:before {
+    content: "\e935";
+    color: rgb(65, 151, 211);
+  }
+  .icon-settle-claims .path2:before {
+    content: "\e936";
+    margin-left: -1.025390625em;
+    color: rgb(65, 151, 211);
+  }
+  .icon-settle-claims .path3:before {
+    content: "\e937";
+    margin-left: -1.025390625em;
+    color: rgb(65, 151, 211);
+  }
+  .icon-settle-claims .path4:before {
+    content: "\e938";
+    margin-left: -1.025390625em;
+    color: rgb(235, 154, 167);
+  }
+  .icon-track-claim:before {
+    content: "\e939";
+    color: #4197d3;
+  }
+  .icon-user:before {
+    content: "\e93a";
+  }
+  
