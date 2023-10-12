@@ -96,9 +96,16 @@ h4 { font-size: var(--heading-font-size-m) }
 h5 { font-size: var(--heading-font-size-s) }
 h6 { font-size: var(--heading-font-size-xs) }
 
-p, dl, ol, ul, pre, blockquote {
+p, dl, pre, blockquote {
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+ul, ol, li{
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+  padding: 0;
 }
 
 hr {
@@ -129,7 +136,7 @@ main pre {
   white-space: pre;
 }
 
-a:any-link {
+/* a:any-link {
   color: var(--link-color);
   text-decoration: none;
 }
@@ -137,6 +144,10 @@ a:any-link {
 a:hover {
   text-decoration: underline;
   color: var(--link-hover-color);
+} */
+
+a{
+  text-decoration: none;
 }
 
 /* buttons */

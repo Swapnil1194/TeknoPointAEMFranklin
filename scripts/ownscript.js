@@ -39,6 +39,24 @@ let run =  function(urlValue) {
     })
 }
 
+let  runPost =  function(urlValue) {
+  return new Promise( (resolve, reject) => {
+      // Creating Our XMLHttpRequest object 
+      let xhr = new XMLHttpRequest();
+      // Making our connection  
+      let url = urlValue;
+      xhr.open("POST", url, true);
+      // function execute after request is successful 
+      xhr.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+              resolve(this.responseText);
+          }
+      }
+      // Sending our request 
+      xhr.send();
+  })
+}
+
 // headerShow('https://qa.tataaia.com/content/experience-fragments/tataaia_life_insuran/en/aem_demo/xfheader/master.html');
 
 window.addEventListener('scroll', function () { 
@@ -196,9 +214,45 @@ async function xfLinkCallBack (xfLink, dumpHTML) {
 
 
 
+/* blog form create lead call start */
 
+let blogSbuBtn = document.querySelector(".blog-form-submit");
 
+blogSbuBtn.addEventListener("click", function(e){
+  e.preventDefault();
+  console.log("clicked");
 
+  var form = this.closest("form");
+
+  var leadName = form.querySelector("#leadName").value;
+  var leadNumber = form.querySelector("#leadNumber").value;
+  var leadEmail = form.querySelector("#leadEmail").value;
+  var leadPlan = form.querySelector("#leadPlan").value;
+
+var data = JSON.stringify({
+  "name": leadName,
+  "mobileNumber": leadNumber
+});
+
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+
+xhr.addEventListener("readystatechange", function() {
+  if(this.readyState === 4) {
+    console.log(this.responseText);
+  }
+});
+
+xhr.open("POST", "https://webapiuat.tataaia.com/create_lead/createLead");
+xhr.setRequestHeader("ClientID", "kJbc1W1YupprLcB8YZE0gla1T8APG3Mf");
+xhr.setRequestHeader("UID", "b10cbb75fd877a84a5c719e52bb921358014aee1");
+xhr.setRequestHeader("RequestTime", "1697097006323");
+xhr.setRequestHeader("Content-Type", "application/json");
+
+xhr.send(data);
+});
+
+/* blog form create lead call end */
 
 
 

@@ -992,22 +992,23 @@
   
     .arr-wh-ht {
         width: 8px;
-        height: 12px
+        height: 12px;
     }
   
     .pro-wh-ht {
         width: 29px;
-        height: 30px
+        height: 30px;
     }
   
     .call-icn-wh-ht {
         width: 18px;
-        height: 18px
+        height: 18px;
+        margin-bottom: 6px;
     }
   
     .header-logo-wd-ht {
         width: 90px;
-        height: 24px
+        height: 24px;
     }
   
     .custom-callusForm {
@@ -1015,20 +1016,20 @@
         background: #fff;
         border: 1px solid #daeef8;
         box-sizing: border-box;
-        border-radius: 10px
+        border-radius: 10px;
     }
   
     .custom-callusForm {
-        margin-bottom: 10px
+        margin-bottom: 10px;
     }
   
     .ta-popup-maindiv.custom-callusForm-Height {
-        padding: 27px 17px 17px
+        padding: 27px 17px 17px;
     }
   
     .ta-popup-maindiv.custom-callusForm-Height .call-popup-close-btn {
         right: 6px;
-        top: 6px
+        top: 6px;
     }
   
     .dsktext {
@@ -1039,7 +1040,7 @@
         border-radius: 0;
         width: auto;
         background: 0;
-        cursor: pointer
+        cursor: pointer;
     }
   
     .mail-icon {
@@ -1047,7 +1048,7 @@
         width: 90px;
         height: 34px;
         font-size: 1.4rem;
-        line-height: 3.2rem
+        line-height: 3.2rem;
     }
   
     .navigation-more-icon {
