@@ -39,6 +39,24 @@ let  run =  function(urlValue) {
     })
 }
 
+let  runPost =  function(urlValue) {
+  return new Promise( (resolve, reject) => {
+      // Creating Our XMLHttpRequest object 
+      let xhr = new XMLHttpRequest();
+      // Making our connection  
+      let url = urlValue;
+      xhr.open("POST", url, true);
+      // function execute after request is successful 
+      xhr.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+              resolve(this.responseText);
+          }
+      }
+      // Sending our request 
+      xhr.send();
+  })
+}
+
 // headerShow('https://qa.tataaia.com/content/experience-fragments/tataaia_life_insuran/en/aem_demo/xfheader/master.html');
 
 window.addEventListener('scroll', function () { 
@@ -177,9 +195,19 @@ blog_disc.addEventListener("click", function(){
 
 
 
+/* blog form create lead call start */
 
+let blogSbuBtn = document.querySelector(".blog-form-submit");
 
+blogSbuBtn.addEventListener("click", function(e){
+  e.preventDefault();
+  console.log("clicked");
 
+  var form = this.closest("form");
+
+});
+
+/* blog form create lead call end */
 
 
 
