@@ -205,6 +205,32 @@ blogSbuBtn.addEventListener("click", function(e){
 
   var form = this.closest("form");
 
+  var leadName = form.querySelector("#leadName").value;
+  var leadNumber = form.querySelector("#leadNumber").value;
+  var leadEmail = form.querySelector("#leadEmail").value;
+  var leadPlan = form.querySelector("#leadPlan").value;
+
+var data = JSON.stringify({
+  "name": leadName,
+  "mobileNumber": leadNumber
+});
+
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+
+xhr.addEventListener("readystatechange", function() {
+  if(this.readyState === 4) {
+    console.log(this.responseText);
+  }
+});
+
+xhr.open("POST", "https://webapiuat.tataaia.com/create_lead/createLead");
+xhr.setRequestHeader("ClientID", "kJbc1W1YupprLcB8YZE0gla1T8APG3Mf");
+xhr.setRequestHeader("UID", "b10cbb75fd877a84a5c719e52bb921358014aee1");
+xhr.setRequestHeader("RequestTime", "1697097006323");
+xhr.setRequestHeader("Content-Type", "application/json");
+
+xhr.send(data);
 });
 
 /* blog form create lead call end */
