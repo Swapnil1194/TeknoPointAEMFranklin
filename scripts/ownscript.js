@@ -116,6 +116,7 @@ function populateData (data) {
     var mainTable = document.querySelector('.main-table');
     var updatedDiv = tabletoHTML.querySelector('.blog-right-card');
     mainTable.append(updatedDiv);
+    formShow();
 }
 
 fetch("https://stage.tataaia.com/content/tataaialifeinsurancecompanylimited/api/articleblog.json", requestOptions)
@@ -125,6 +126,56 @@ fetch("https://stage.tataaia.com/content/tataaialifeinsurancecompanylimited/api/
 
 
 /* Latest Article End */
+
+/* Form Article Start */
+
+function formShow(){
+  var mainTable = document.querySelector('.main-table');
+
+  let newForm = `<div class="list-li-2">
+                <h3>Looking for a financial solution to save tax? Speak to our expert</h3>
+                <form class="blog-lead-form">
+                    <div class="input-field">
+                        <label>Name</label>
+                        <input type="text" id="leadName" placeholder="Enter Full Name">
+                        <p class="err-msg dsp-none">Please Enter Full Name</p>
+                    </div>
+                    <div class="input-field">
+                        <label>Mobile Number</label>
+                        <input type="text" id="leadNumber" maxlength="10" placeholder="Enter Mobile Number">
+                        <p class="err-msg dsp-none">Please enter valid mobile number</p>
+                    </div>
+                    <div class="input-field">
+                        <label>Email ID</label>
+                        <input type="text" id="leadEmail" placeholder="Enter Email id">
+                        <p class="err-msg dsp-none">Please enter valid email ID</p>
+                    </div>
+                    <div class="input-field">
+                        <label>Plan</label>
+                        <select id="leadPlan">
+                            <option selected disabled hidden>Select Plan</option>
+                            <option value="Term Plans">Term Plans</option>
+                            <option value="Saving Plans">Saving Plans</option>
+                            <option value="Retirement Plans">Retirement Plans</option>
+                            <option value="Wealth Plans">Wealth Plans</option>
+                            <option value="I don't know / I need help">I don't know / I need help</option>
+                        </select>
+                        <p class="err-msg dsp-none">Please select the plan</p>
+                    </div>
+                    <button class="blog-form-submit">Get a call back</button>
+                </form>
+              </div>`
+  
+    let div = document.createElement('div')
+    div.classList.add('form');
+    mainTable.append(div);
+    document.querySelector('.main-table .form').innerHTML = newForm;
+}
+
+/* From Article End */
+
+
+
 
 
 /* Main Class Added to write CSS Start */
