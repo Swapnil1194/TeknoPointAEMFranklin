@@ -171,10 +171,10 @@ a.button:any-link, button {
   border-radius: 30px;
 }
 
-a.button:hover, a.button:focus, button:hover, button:focus  {
+/* a.button:hover, a.button:focus, button:hover, button:focus  {
   background-color: var(--link-hover-color);
   cursor: pointer;
-}
+} */
 
 button:disabled, button:disabled:hover {
   background-color: var(--overlay-background-color);
@@ -201,9 +201,9 @@ main input {
   background-color: var(--background-color);
 }
 
-main input:hover {
+/* main input:hover {
   border: 1px solid var(--text-color);
-}
+} */
 
 main blockquote {
   font-style: italic;

@@ -163,6 +163,7 @@ function formShow(){
                         <p class="err-msg dsp-none">Please select the plan</p>
                     </div>
                     <button class="blog-form-submit">Get a call back</button>
+                    <p class="form-succes">Your details have been successfully submitted</p>
                 </form>
               </div>`
   
@@ -322,7 +323,9 @@ xhr.addEventListener("readystatechange", function() {
         }
     }
 
+    document.querySelector(".form-succes").style.display="block";
     return response;
+
 
   }
   /* if(this.readyState === 4) {
