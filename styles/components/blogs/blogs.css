@@ -376,5 +376,127 @@
     position: unset;
     width: 100%;
   }
-}
-/* blog form css end */
+  
+  .main-blog-wrapper .blog-disclaimer .default-content-wrapper h3{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    line-height: normal;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+  
+  .main-blog-wrapper .blog-disclaimer .default-content-wrapper ul{
+    margin-top: 30px;
+  }
+  
+  .main-blog-wrapper .blog-disclaimer .default-content-wrapper ul li{
+    color: #333;
+    font-family: "helveticaregular";
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.126px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    list-style: disc;
+  }
+  
+  .main-blog-wrapper .blog-disclaimer .default-content-wrapper ul li::marker{
+    color: #4197d3;
+  }
+  
+  .main-blog-wrapper .blog-right-sec .table-wrapper .table .blog-right-card:first-child{
+      margin-top: 0px;
+  }
+
+  .main-blog-wrapper .blog-right-sec .table-wrapper .table .blog-right-card{
+    padding: 24px 20px 20px 20px;
+    background: #fff;
+    border: 1px solid #daeef8;
+    box-sizing: border-box;
+    box-shadow: 3px 6px 14px rgba(0,115,187,0.1);
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+  
+  .main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-0 h4{
+    margin-bottom: 10px;
+    font-family: "Inter",sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333;
+  }
+  
+  .main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-0 ul li, .main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-0 ul li a{
+    margin-bottom: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333;
+  }
+  
+  .main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-0 ul li{
+    position: relative;
+    padding-left: 12px;
+  }
+  
+  .main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-0 ul li::before{
+    height: 100%;
+    top: 4px;
+    left: 0;
+    position: absolute;
+    border-left: 2px solid #91c4ea;
+    content: "";
+  }
+  
+  /* .main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-1{
+    padding: 24px 20px 20px 20px;
+    background: #fff;
+    border: 1px solid #daeef8;
+    box-sizing: border-box;
+    box-shadow: 3px 6px 14px rgba(0,115,187,0.1);
+    border-radius: 20px;
+    margin-top: 20px;
+  } */
+  
+  .main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-1 h4{
+    margin-bottom: 10px;
+    font-family: "Inter",sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333;
+  }
+  
+  .main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-1 ul li{
+    padding: 13px 0;
+    border-bottom: 1px solid #d8d8d8;
+  }
+  
+  .main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-1 ul li a{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.266667px;
+    color: #333;
+    position: relative;
+  }
+  
+  .main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-1 ul li a::after{
+    content: '';
+    width: 15px;
+    height: 13px;
+    background: url('https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blog/browse-arrow.png') no-repeat;
+    display: block;
+    position: absolute;
+    right: -24px;
+    top: 5px;
+  }
+  /* Blog Page CSS end */
+  
+  
+  
