@@ -420,6 +420,9 @@
   color: #333;
 }
 @media screen and (max-width: 767px){
+  .main-blog-wrapper{
+    width: calc(100% + 40px);
+  }
   .main-blog-wrapper .section{
     padding: 0 20px;
   }
