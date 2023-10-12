@@ -8,6 +8,10 @@
   width: 70%;
 }
 
+.w-65 .table-of-contents-wrapper {
+  width: 70%;
+}
+
 .main-blog-wrapper .section.blog-right-sec {
   position: absolute;
   top: 0;
@@ -362,13 +366,62 @@
   border: 0.833333px solid #d62049;
 }
 
+.blog-table-content .table-of-contents-wrapper h2{
+  color: #333;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  line-height: normal;
+}
 
+.blog-table-content .table-of-contents-wrapper ul{
+  border-radius: 20px;
+  background-color: #edf4fa;
+  padding: 20px 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blog-table-content .table-of-contents-wrapper ul li{
+  width: 48%;
+  padding: 10px 0;
+  border-bottom: 1px solid #e7e8e9;
+  font-family: "HelveticaNeueLTStd-Md", sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: -.75px;
+  color: #333;
+  position: relative;
+  padding-left: 10px;
+}
+
+.blog-table-content .table-of-contents-wrapper ul li::before{
+  content: '';
+  background-image: url("https://stage.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/arrow-icon.svg");
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  margin-left: -20px;
+  top: 17px
+}
+
+.blog-table-content .table-of-contents-wrapper ul li a{
+  font-family: "HelveticaNeueLTStd-Md", sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: -.75px;
+  color: #333;
+}
 @media screen and (max-width: 767px){
   .main-blog-wrapper .section{
     padding: 0 20px;
   }
 
   .w-65 .default-content-wrapper {
+    width: 100%;
+  }
+
+  .w-65 .table-of-contents-wrapper {
     width: 100%;
   }
 
@@ -455,16 +508,6 @@
     content: "";
   }
   
-  /* .main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-1{
-    padding: 24px 20px 20px 20px;
-    background: #fff;
-    border: 1px solid #daeef8;
-    box-sizing: border-box;
-    box-shadow: 3px 6px 14px rgba(0,115,187,0.1);
-    border-radius: 20px;
-    margin-top: 20px;
-  } */
-  
   .main-blog-wrapper .blog-right-sec .table-wrapper .table .list-li-1 h4{
     margin-bottom: 10px;
     font-family: "Inter",sans-serif;
@@ -498,6 +541,7 @@
     right: -24px;
     top: 5px;
   }
+}
   /* Blog Page CSS end */
   
   
