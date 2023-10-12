@@ -361,6 +361,13 @@
   color: #fff;
 }
 
+.form-succes{
+  font-size: 14px !important;
+  text-align: center !important;
+  color: #5b9354 !important;
+  display: none;
+}
+
 .blog-form-submit:hover {
   background: #d62049;
   border: 0.833333px solid #d62049;
