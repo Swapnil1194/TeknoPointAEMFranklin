@@ -243,34 +243,42 @@ blog_disc.addEventListener("click", function(){
 
 /* Header XF Logic Start */
 
-let xfHeaderLinks = document.querySelectorAll('.xf-rewamp-frag');
+  /* Desktop XF Logic Start */
 
-for (let ii = 0; ii < xfHeaderLinks.length; ii++) {
-  
-    var xfLink = xfHeaderLinks[ii].getAttribute('data-fragment');
-    await xfLinkCallBack(xfLink , xfHeaderLinks[ii]);
-    
-}
+      let xfHeaderLinks = document.querySelectorAll('.xf-rewamp-frag');
 
-async function xfLinkCallBack (xfLink, dumpHTML) {
-    var response = await run(xfLink);
-    var html = document.createElement("html");
-    html.innerHTML = response;
-    var aemGrid = html.querySelector(".aem-Grid");
-    dumpHTML.innerHTML = aemGrid.innerHTML;
-}
-
-let headerInnerNav = document.querySelectorAll('.ta-l0-nav-item');
-
-[...headerInnerNav].forEach( function (eachLiItem) {
-  eachLiItem.addEventListener('mouseover', function () {
-      var childrenLI = this.parentElement.children;
-      for (let ii = 0; ii < childrenLI.length; ii++) {
-        childrenLI[ii].classList.remove('active');
+      for (let ii = 0; ii < xfHeaderLinks.length; ii++) {
+        
+          var xfLink = xfHeaderLinks[ii].getAttribute('data-fragment');
+          await xfLinkCallBack(xfLink , xfHeaderLinks[ii]);
+          
       }
-      this.classList.add('active');
-  });
-});
+
+      async function xfLinkCallBack (xfLink, dumpHTML) {
+          var response = await run(xfLink);
+          var html = document.createElement("html");
+          html.innerHTML = response;
+          var aemGrid = html.querySelector(".aem-Grid");
+          dumpHTML.innerHTML = aemGrid.innerHTML;
+      }
+
+      let headerInnerNav = document.querySelectorAll('.ta-l0-nav-item');
+
+      [...headerInnerNav].forEach( function (eachLiItem) {
+        eachLiItem.addEventListener('mouseover', function () {
+            var childrenLI = this.parentElement.children;
+            for (let ii = 0; ii < childrenLI.length; ii++) {
+              childrenLI[ii].classList.remove('active');
+            }
+            this.classList.add('active');
+        });
+      });
+
+  /* Desktop XF Logic end */
+
+  /* Mobile XF Logic Start */
+      
+  /* Mobile XF Logic end */
 
 
 /* Header XF Logic End */
