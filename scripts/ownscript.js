@@ -373,3 +373,10 @@ for(var i=0; i<table_content_list.length; i++){
   });
 }
 /* table of content js end */
+
+
+/* Lozad  */
+
+setTimeout(() => {
+  lozad().observe();
+}, 1000);
