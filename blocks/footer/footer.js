@@ -23,3 +23,5 @@ export default async function decorate(block) {
     block.append(footer);
   }
 }
+
+lozad().observe()
