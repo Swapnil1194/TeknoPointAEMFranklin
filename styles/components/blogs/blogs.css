@@ -433,6 +433,10 @@
   border-radius: 20px;
 }
 
+.main-blog-wrapper .blog-table-content{
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 767px){
   .main-blog-wrapper .section{
     padding: 0 20px;
@@ -587,6 +591,10 @@
 
   .main-blog-wrapper .blog-faq .default-content-wrapper ul .blog-faq-list ul li{
     font-size: 14px;
+  }
+
+  .blog-table-content .table-of-contents-wrapper ul li{
+    width: 100%;
   }
 }
   /* Blog Page CSS end */
