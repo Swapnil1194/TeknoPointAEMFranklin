@@ -61,6 +61,21 @@
   list-style: decimal;
 }
 
+.main-blog-wrapper .blog-table-of-content ul {
+  padding: 0;
+}
+
+.main-blog-wrapper .blog-table-of-content ul li {
+  padding: 0;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: 'helveticaregular', sans-serif;
+  line-height: 28px;
+  color: #373737;
+  list-style: disc;
+}
+
 .main-blog-wrapper .blog-faq .default-content-wrapper h2 {
   color: #333;
   font-family: "Inter", sans-serif;
