@@ -34,7 +34,7 @@
   color: #333;
   font-family: "Inter", sans-serif;
   font-size: 42px;
-  line-height: 42px;
+  line-height: normal;
   letter-spacing: -1.28px;
   margin-bottom: 30px;
 }
@@ -82,6 +82,10 @@
   border-radius: 20px;
   cursor: pointer;
   position: relative;
+}
+
+.main-blog-wrapper .blog-faq .default-content-wrapper ul .blog-faq-list strong{
+  width: 98.5%;
 }
 
 .main-blog-wrapper .blog-faq .default-content-wrapper ul .blog-faq-list::after {
@@ -419,6 +423,16 @@
   letter-spacing: -.75px;
   color: #333;
 }
+
+.main-blog-wrapper .default-content-wrapper picture{
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.main-blog-wrapper .default-content-wrapper picture img{
+  border-radius: 20px;
+}
+
 @media screen and (max-width: 767px){
   .main-blog-wrapper .section{
     padding: 0 20px;
@@ -547,6 +561,32 @@
     position: absolute;
     right: -24px;
     top: 5px;
+  }
+
+  .main-blog-wrapper .blog-banner-wrapper .default-content-wrapper h1{
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .main-blog-wrapper .blog-table-of-content .default-content-wrapper h2{
+    font-size: 28px;
+  }
+
+  .main-blog-wrapper .blog-faq .default-content-wrapper h2{
+    font-size: 28px;
+  }
+
+  .main-blog-wrapper .blog-faq .default-content-wrapper ul .blog-faq-list{
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .main-blog-wrapper .blog-faq .default-content-wrapper ul .blog-faq-list strong{
+    width: 93%;
+  }
+
+  .main-blog-wrapper .blog-faq .default-content-wrapper ul .blog-faq-list ul li{
+    font-size: 14px;
   }
 }
   /* Blog Page CSS end */
