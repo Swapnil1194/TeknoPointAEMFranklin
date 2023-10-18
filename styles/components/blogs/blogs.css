@@ -61,6 +61,12 @@
   list-style: decimal;
 }
 
+.main-blog-wrapper .blog-table-of-content ol li ol li{
+  list-style: none;
+  margin-left: 0;
+  font-size: 18px;
+}
+
 .main-blog-wrapper .blog-table-of-content ul {
   padding: 0;
 }
