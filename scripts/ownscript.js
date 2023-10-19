@@ -341,7 +341,7 @@ xhr.addEventListener("readystatechange", function() {
   } */
 });
 
-xhr.open("POST", "http://localhost:4504/content/tataaialifeinsurancecompanylimited/api/callcreateLead");
+xhr.open("POST", "https://qa.tataaia.com/content/tataaialifeinsurancecompanylimited/api/callcreateLead.json");
 xhr.setRequestHeader("ClientID", "kJbc1W1YupprLcB8YZE0gla1T8APG3Mf");
 xhr.setRequestHeader("UID", "b10cbb75fd877a84a5c719e52bb921358014aee1");
 xhr.setRequestHeader("RequestTime", "1697097006323");
