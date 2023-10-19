@@ -1429,6 +1429,12 @@ label.fixed-label {
   margin-bottom: 20px;
 }
 
+.stickyForm{
+  position: fixed;
+  top: 87px;
+  width: 21%;
+}
+
 @media screen and (max-width: 767px){
   .main-blog-wrapper .section{
     padding: 0 20px;

@@ -311,7 +311,7 @@ blogSbuBtn.addEventListener("click", function(e){
 
   newdata = JSON.stringify(newdata);
   data.append("data", newdata);
-  
+
   var xhr = new XMLHttpRequest();
   xhr.withCredentials = true;
 
@@ -327,6 +327,22 @@ blogSbuBtn.addEventListener("click", function(e){
 
 });
 /* blog form create lead call end */
+
+
+/* sticky blog form logic start*/
+  var blogFormPos = document.querySelector('.form').offsetTop;
+  var faqPos = document.querySelector('.blog-faq').offsetTop;
+  window.addEventListener("scroll", function(){
+    var scrollPos = this.scrollY;
+    console.log(scrollPos);
+
+    if (scrollPos >  blogFormPos){
+      document.querySelector('.form').classList.add('stickyForm');
+    }else{
+      document.querySelector('.form').classList.remove('stickyForm');
+    }
+  });
+/* sticky blog form logic end*/
 
 
 /* table of content js start */
