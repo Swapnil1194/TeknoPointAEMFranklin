@@ -301,8 +301,17 @@ blogSbuBtn.addEventListener("click", function(e){
   var leadPlan = form.querySelector("#leadPlan").value;
   
   var data = new FormData();
-  data.append("data", "{\"requestJson\":{\"name\":\"test test\",\"mobileNumber\":\"9999999998\",\"emailAddress\":\"test12344@gmail.com\"}}");
+  var newdata = {"requestJson":
+    {
+    "name": leadName,
+    "mobileNumber": leadNumber,
+    "emailAddress": leadEmail
+    }
+  }
 
+  newdata = JSON.stringify(newdata);
+  data.append("data", newdata);
+  
   var xhr = new XMLHttpRequest();
   xhr.withCredentials = true;
 
