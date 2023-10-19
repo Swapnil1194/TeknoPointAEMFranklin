@@ -288,12 +288,10 @@ blog_disc.addEventListener("click", function(){
 
 
 /* blog form create lead call start */
-
 let blogSbuBtn = document.querySelector(".blog-form-submit");
 
 blogSbuBtn.addEventListener("click", function(e){
   e.preventDefault();
-  console.log("clicked");
 
   var form = this.closest("form");
 
@@ -301,57 +299,24 @@ blogSbuBtn.addEventListener("click", function(e){
   var leadNumber = form.querySelector("#leadNumber").value;
   var leadEmail = form.querySelector("#leadEmail").value;
   var leadPlan = form.querySelector("#leadPlan").value;
+  
+  var data = new FormData();
+  data.append("data", "{\"requestJson\":{\"name\":\"test test\",\"mobileNumber\":\"9999999998\",\"emailAddress\":\"test12344@gmail.com\"}}");
 
-  var reqObj = {
-    "requestJson": {
-        "name": leadName,
-        "mobileNumber": leadNumber,
-        "emailAddress": leadEmail,
-        "comments": leadPlan,
-    },
-    "token": {}
-};
+  var xhr = new XMLHttpRequest();
+  xhr.withCredentials = true;
 
-var xhr = new XMLHttpRequest();
-xhr.withCredentials = true;
-
-xhr.addEventListener("readystatechange", function() {
-
-  if(this.readyState === 1) {
-      var response = {
-        "statusCode": 200,
-        "successMsg": "success",
-        "responseJson": {
-            "status": 200,
-            "message": "Success",
-            "data": {
-                "message": "Success",
-                "leadId": "536365"
-            }
-        }
+  xhr.addEventListener("readystatechange", function() {
+    if(this.readyState === 4) {
+      console.log(this.responseText);
     }
+  });
 
-    document.querySelector(".form-succes").style.display="block";
-    return response;
+  xhr.open("POST", "https://qa.tataaia.com/content/tataaialifeinsurancecompanylimited/api/callcreateLead.json");
+  xhr.send(data);
 
-
-  }
-  /* if(this.readyState === 4) {
-    console.log(this.responseText);
-  } */
 });
-
-xhr.open("POST", "https://qa.tataaia.com/content/tataaialifeinsurancecompanylimited/api/callcreateLead.json");
-xhr.setRequestHeader("ClientID", "kJbc1W1YupprLcB8YZE0gla1T8APG3Mf");
-xhr.setRequestHeader("UID", "b10cbb75fd877a84a5c719e52bb921358014aee1");
-xhr.setRequestHeader("RequestTime", "1697097006323");
-xhr.setRequestHeader("Content-Type", "application/json");
-
-xhr.send(reqObj);
-});
-
 /* blog form create lead call end */
-
 
 
 /* table of content js start */
