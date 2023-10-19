@@ -309,6 +309,7 @@ blogSbuBtn.addEventListener("click", function(e){
   xhr.addEventListener("readystatechange", function() {
     if(this.readyState === 4) {
       console.log(this.responseText);
+      document.querySelector(".form-succes").style.display = "block";
     }
   });
 
