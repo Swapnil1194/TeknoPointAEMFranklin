@@ -330,18 +330,24 @@ blogSbuBtn.addEventListener("click", function(e){
 
 
 /* sticky blog form logic start*/
+  function isElementGettingVisibleFromBottom(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top < window.innerHeight;
+  }
+
+  var faqSection = document.querySelector(".blog-faq");
   var blogFormPos = document.querySelector('.form').offsetTop;
   var faqPos = document.querySelector('.blog-faq').offsetTop;
   window.addEventListener("scroll", function(){
     var scrollPos = this.scrollY;
-    console.log(scrollPos);
 
-    if (scrollPos >  blogFormPos){
+    if (scrollPos >  blogFormPos && (! isElementGettingVisibleFromBottom(faqSection))){
       document.querySelector('.form').classList.add('stickyForm');
-    }else{
+    }else {
+      console.log("Element is getting visible from the bottom.");
       document.querySelector('.form').classList.remove('stickyForm');
     }
-  });
+  });  
 /* sticky blog form logic end*/
 
 
