@@ -963,8 +963,12 @@ label.fixed-label {
       top: -22px;
       right: -199px
   }
-}
 
+  .footer__wrapper{
+    width: calc(100% + 40px);
+  }
+
+}
 
 /* common end */
 /* common css code end */
