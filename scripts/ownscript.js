@@ -338,16 +338,20 @@ blogSbuBtn.addEventListener("click", function(e){
   var faqSection = document.querySelector(".blog-faq");
   var blogFormPos = document.querySelector('.form').offsetTop;
   var faqPos = document.querySelector('.blog-faq').offsetTop;
-  window.addEventListener("scroll", function(){
-    var scrollPos = this.scrollY;
 
-    if (scrollPos >  blogFormPos && (! isElementGettingVisibleFromBottom(faqSection))){
-      document.querySelector('.form').classList.add('stickyForm');
-    }else {
-      console.log("Element is getting visible from the bottom.");
-      document.querySelector('.form').classList.remove('stickyForm');
-    }
-  });  
+  var mobView = window.matchMedia("(max-width: 768px)");
+  if(! mobView.matches){
+    window.addEventListener("scroll", function(){
+      var scrollPos = this.scrollY;
+  
+      if (scrollPos >  blogFormPos && (! isElementGettingVisibleFromBottom(faqSection))){
+        document.querySelector('.form').classList.add('stickyForm');
+      }else {
+        console.log("Element is getting visible from the bottom.");
+        document.querySelector('.form').classList.remove('stickyForm');
+      }
+    });  
+  }
 /* sticky blog form logic end*/
 
 
