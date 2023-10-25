@@ -467,7 +467,20 @@ html {
   [data-src].vis {
     opacity: 1;
   }
+  .page-container {
+    padding: 0 84px;
+  }
+  .container {
+    max-width: 1366px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
   @media screen and (max-width:767px) {
+    .page-container {
+      padding: 0 15px !important;
+    }
     .ta-cs-easyclaim-sct .btn {
         padding: 10px 13px
     }
