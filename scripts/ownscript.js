@@ -187,37 +187,42 @@ document.querySelector('main').classList.add('main-blog-wrapper');
 
 /* FAQ Section Logic Start */
 
-let faq_ul_wrapper = document.querySelector(".blog-faq .default-content-wrapper");
-
-let faq_ul = faq_ul_wrapper.querySelector('ul');
-
-let faq_ul_li = faq_ul.children;
-
-
-for (let i = 0; i < faq_ul_li.length; i++) {
-  faq_ul_li[i].classList.add("blog-faq-list");
+function FAQWrapper () {
+  let faq_ul_wrapper = document.querySelector(".blog-faq .default-content-wrapper");
+  
+  let faq_ul = faq_ul_wrapper.querySelector('ul');
+  
+  let faq_ul_li = faq_ul.children;
+  
+  
+  for (let i = 0; i < faq_ul_li.length; i++) {
+    faq_ul_li[i].classList.add("blog-faq-list");
+  }
+  
+  let faq_accordion = document.querySelectorAll(".blog-faq-list");
+  
+  
+  [...faq_accordion].forEach((i) => {
+    i.addEventListener("click", function () {
+      if (this.querySelector('ul').style.display == "block") {
+        this.querySelector('ul').style.display = 'none';
+        this.classList.remove("active");
+        this.querySelector('ul').style.transition = "all 1s ease-out 2s";
+      } else {
+        faq_accordion.forEach((i) => { 
+          i.querySelector('ul').style.display = 'none'; 
+          i.classList.remove("active"); 
+        });
+        this.querySelector('ul').style.display = "block";
+        this.classList.add("active");
+        this.querySelector('ul').style.transition = "all 1s ease-in 2s";
+      }
+    });
+  });
 }
 
-let faq_accordion = document.querySelectorAll(".blog-faq-list");
+document.querySelector(".blog-faq") && FAQWrapper();
 
-
-[...faq_accordion].forEach((i) => {
-  i.addEventListener("click", function () {
-    if (this.querySelector('ul').style.display == "block") {
-      this.querySelector('ul').style.display = 'none';
-      this.classList.remove("active");
-      this.querySelector('ul').style.transition = "all 1s ease-out 2s";
-    } else {
-      faq_accordion.forEach((i) => { 
-        i.querySelector('ul').style.display = 'none'; 
-        i.classList.remove("active"); 
-      });
-      this.querySelector('ul').style.display = "block";
-      this.classList.add("active");
-      this.querySelector('ul').style.transition = "all 1s ease-in 2s";
-    }
-  });
-});
 
 /* FAQ Section Logic End */
 
@@ -230,14 +235,20 @@ function addingClass(a){
   }
 }
 
-var rightSideDiv = document.querySelector(".blog-right-sec .table-wrapper .table").children
-addingClass(rightSideDiv);
+function Disclaimer() {
+  
+  var rightSideDiv = document.querySelector(".blog-right-sec .table-wrapper .table").children
+  addingClass(rightSideDiv);
+  
+  var blog_disc = document.querySelector(".blog-disclaimer .default-content-wrapper");
+  
+  blog_disc.addEventListener("click", function(){
+    this.classList.toggle("active");
+  });
+  
+}
 
-var blog_disc = document.querySelector(".blog-disclaimer .default-content-wrapper");
-
-blog_disc.addEventListener("click", function(){
-  this.classList.toggle("active");
-});
+document.querySelector(".blog-right-sec") && Disclaimer();
 
 /* Discalimer Logic End */
 
@@ -288,44 +299,8 @@ blog_disc.addEventListener("click", function(){
 
 
 /* blog form create lead call start */
-let blogSbuBtn = document.querySelector(".blog-form-submit");
+let blogSbuBtn = document.querySelector(".blog-form-submit") && StickyFrom();
 
-blogSbuBtn.addEventListener("click", function(e){
-  e.preventDefault();
-
-  var form = this.closest("form");
-
-  var leadName = form.querySelector("#leadName").value;
-  var leadNumber = form.querySelector("#leadNumber").value;
-  var leadEmail = form.querySelector("#leadEmail").value;
-  var leadPlan = form.querySelector("#leadPlan").value;
-  
-  var data = new FormData();
-  var newdata = {"requestJson":
-    {
-    "name": leadName,
-    "mobileNumber": leadNumber,
-    "emailAddress": leadEmail
-    }
-  }
-
-  newdata = JSON.stringify(newdata);
-  data.append("data", newdata);
-
-  var xhr = new XMLHttpRequest();
-  xhr.withCredentials = true;
-
-  xhr.addEventListener("readystatechange", function() {
-    if(this.readyState === 4) {
-      console.log(this.responseText);
-      document.querySelector(".form-succes").style.display = "block";
-    }
-  });
-
-  xhr.open("POST", "https://qa.tataaia.com/content/tataaialifeinsurancecompanylimited/api/callcreateLead.json");
-  xhr.send(data);
-
-});
 /* blog form create lead call end */
 
 
@@ -335,43 +310,86 @@ blogSbuBtn.addEventListener("click", function(e){
     return rect.top < window.innerHeight;
   }
 
-  var faqSection = document.querySelector(".blog-faq");
-  var blogFormPos = document.querySelector('.form').offsetTop;
-  var faqPos = document.querySelector('.blog-faq').offsetTop;
+  function StickyFrom(){
 
-  var mobView = window.matchMedia("(max-width: 768px)");
-  if(! mobView.matches){
-    window.addEventListener("scroll", function(){
-      var scrollPos = this.scrollY;
-  
-      if (scrollPos >  blogFormPos && (! isElementGettingVisibleFromBottom(faqSection))){
-        document.querySelector('.form').classList.add('stickyForm');
-      }else {
-        console.log("Element is getting visible from the bottom.");
-        document.querySelector('.form').classList.remove('stickyForm');
+    blogSbuBtn.addEventListener("click", function(e){
+      e.preventDefault();
+    
+      var form = this.closest("form");
+    
+      var leadName = form.querySelector("#leadName").value;
+      var leadNumber = form.querySelector("#leadNumber").value;
+      var leadEmail = form.querySelector("#leadEmail").value;
+      var leadPlan = form.querySelector("#leadPlan").value;
+      
+      var data = new FormData();
+      var newdata = {"requestJson":
+        {
+        "name": leadName,
+        "mobileNumber": leadNumber,
+        "emailAddress": leadEmail
+        }
       }
-    });  
+    
+      newdata = JSON.stringify(newdata);
+      data.append("data", newdata);
+    
+      var xhr = new XMLHttpRequest();
+      xhr.withCredentials = true;
+    
+      xhr.addEventListener("readystatechange", function() {
+        if(this.readyState === 4) {
+          console.log(this.responseText);
+          document.querySelector(".form-succes").style.display = "block";
+        }
+      });
+    
+      xhr.open("POST", "https://qa.tataaia.com/content/tataaialifeinsurancecompanylimited/api/callcreateLead.json");
+      xhr.send(data);
+    
+    });
+
+    var faqSection = document.querySelector(".blog-faq");
+    var blogFormPos = document.querySelector('.form').offsetTop;
+    var faqPos = document.querySelector('.blog-faq').offsetTop;
+  
+    var mobView = window.matchMedia("(max-width: 768px)");
+    if(! mobView.matches){
+      window.addEventListener("scroll", function(){
+        var scrollPos = this.scrollY;
+    
+        if (scrollPos >  blogFormPos && (! isElementGettingVisibleFromBottom(faqSection))){
+          document.querySelector('.form').classList.add('stickyForm');
+        }else {
+          console.log("Element is getting visible from the bottom.");
+          document.querySelector('.form').classList.remove('stickyForm');
+        }
+      });  
+    }
   }
 /* sticky blog form logic end*/
 
 
 /* table of content js start */
 
-var table_content_list = document.querySelectorAll(".blog-table-content ul li a");
-for(var i=0; i<table_content_list.length; i++){
-  table_content_list[i].addEventListener("click", function(e){
-    e.preventDefault();
-    var href = this.getAttribute("href");
-    var targetElement = document.querySelector(href);
+var table_content_list = document.querySelectorAll(".blog-table-content ul li a") && TableOFContent();
 
-    var target = targetElement.getBoundingClientRect().top + window.scrollY - 100;
-
-    window.scrollTo({
-      top: target,
-      behavior: 'smooth'
+function TableOFContent(){
+  for(var i=0; i<table_content_list.length; i++){
+    table_content_list[i].addEventListener("click", function(e){
+      e.preventDefault();
+      var href = this.getAttribute("href");
+      var targetElement = document.querySelector(href);
+  
+      var target = targetElement.getBoundingClientRect().top + window.scrollY - 100;
+  
+      window.scrollTo({
+        top: target,
+        behavior: 'smooth'
+      });
+  
     });
-
-  });
+  }
 }
 /* table of content js end */
 
