@@ -12,3 +12,7 @@ indices:
       include:
       - '/6-reasons-to-investing-in-the-national-pension-scheme-nps/**'
       target: /reasons-query.json
+      properties:
+      title:
+        select: head > meta[property="og:title"]
+        value: attribute(el, "content")
