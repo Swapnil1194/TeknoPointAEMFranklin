@@ -67,7 +67,7 @@ window.addEventListener('scroll', function () {
 
 /* Latest Article Start */
 
-document.querySelector('.blog-right-sec > div > div').classList.add('main-table');
+ document.querySelector('.blog-right-sec') && document.querySelector('.blog-right-sec > div > div').classList.add('main-table');
 
 var formdata = new FormData();
 formdata.append("data", "{\"requestJson\":{\"pagePath\":\"/knowledge-centre\",\"resultType\":\"latestBlogs\",\"tag\":\"term\",\"limit\":\"5\",\"contributor\":\"\"}}");
