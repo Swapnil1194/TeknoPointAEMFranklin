@@ -50,3 +50,357 @@ img {
         padding: 0 20px;
     }
 }
+
+
+/* product-page common styling start*/
+.mb-50 {
+    margin-bottom: 50px !important;
+}
+
+/* product-page common styling end*/
+
+
+/* benefits section css start */
+.benefits-cards-section .default-content-wrapper {
+    text-align: center;
+}
+
+.benefits-cards-section .default-content-wrapper h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.benefits-cards-section .default-content-wrapper p {
+    font-family: 'HelveticaNeueLTStd-Bd', sans-serif;
+    font-size: 18px;
+    line-height: normal;
+    color: #333;
+    margin-bottom: 32px;
+}
+
+.benefits-cards-section .benefits-wrapper .benefits {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.benefits-cards-section .benefits-wrapper .benefits .benefits-card {
+    width: 33.3%;
+    padding: 15px 24px 22px 24px;
+    border-top: 1px solid #F6F6F6;
+    border-right: 1px solid #F6F6F6;
+}
+
+.benefits-cards-section .benefits-wrapper .benefits .benefits-card:nth-child(-n+3) {
+    border-top: 0;
+}
+
+.benefits-cards-section .benefits-wrapper .benefits .benefits-card:nth-child(3n) {
+    border-right: 0;
+}
+
+.benefits-cards-section .benefits-wrapper .benefits .benefits-card div:first-child {
+    display: flex;
+    column-gap: 16px;
+    margin-bottom: 20px;
+}
+
+.benefits-cards-section .benefits-wrapper .benefits .benefits-card div:first-child p {
+    margin-bottom: 0;
+}
+
+.benefits-cards-section .benefits-wrapper .benefits .benefits-card div:first-child img {
+    width: 48px;
+    height: 48px;
+}
+
+.benefits-cards-section .benefits-wrapper .benefits .benefits-card div:first-child h3 {
+    max-width: 234px;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    color: #333;
+}
+
+.benefits-cards-section .benefits-wrapper .benefits .benefits-card div:nth-child(2) {
+    font-family: 'helveticaregular', sans-serif;
+    font-size: 16px;
+    line-height: normal;
+}
+
+/* benefits section css end */
+
+
+
+/* additional benefits css start */
+.additional-benefits-section {
+    border-radius: 10px;
+    background: #ECF5FA;
+    padding: 48px 105px !important;
+}
+
+.additional-benefits-section .default-content-wrapper {
+    text-align: center;
+}
+
+.additional-benefits-section .default-content-wrapper h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    color: #333;
+    margin-bottom: 72px;
+}
+
+.additional-benefits-section .additional-benefits-wrapper .additional-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 64px;
+}
+
+.additional-benefits-section .additional-benefits-wrapper .additional-benefits .additional_benefits-card {
+    width: 32%;
+    border-radius: 10px;
+    border: 1px solid#B3D5EB;
+    background: #E0EEF7;
+    padding: 48px 16px 20px 16px;
+    position: relative;
+}
+
+.additional-benefits-section .additional-benefits-wrapper .additional-benefits .additional_benefits-card div:first-child {
+    position: absolute;
+    top: -33px;
+    border-radius: 6px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.10);
+    padding: 8px;
+}
+
+.additional-benefits-section .additional-benefits-wrapper .additional-benefits .additional_benefits-card div:nth-child(2) h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.additional-benefits-section .additional-benefits-wrapper .additional-benefits .additional_benefits-card div:nth-child(2) p {
+    color: #333;
+    font-family: 'helveticaregular', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+/* additional benefits css end */
+
+
+
+/* buy criteria section css start */
+.buy-criteria-section {
+    background-color: #ECF5FA;
+    padding: 60px 0 !important;
+    max-width: unset !important;
+}
+
+.buy-criteria-section .default-content-wrapper {
+    max-width: 1366px;
+    width: 100%;
+    padding: 0 84px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buy-criteria-section .buy-section-wrapper {
+    max-width: 1366px;
+    width: 100%;
+    padding: 0 84px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buy-criteria-section .default-content-wrapper {
+    text-align: center;
+}
+
+.buy-criteria-section .default-content-wrapper h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+    color: #333;
+    margin-bottom: 32px;
+}
+
+.buy-criteria-section .buy-section-wrapper p {
+    margin-bottom: 0;
+}
+
+.buy-criteria-section .buy-section-wrapper .buy-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 24px;
+}
+
+.buy-criteria-section .buy-section-wrapper .buy-section .buy_section-card {
+    width: 32%;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.10);
+    padding: 24px;
+}
+
+.buy-criteria-section .buy-section-wrapper .buy-section .buy_section-card div:first-child {
+    display: flex;
+    column-gap: 16px;
+    margin-bottom: 16px;
+}
+
+.buy-criteria-section .buy-section-wrapper .buy-section .buy_section-card div:first-child h3 {
+    max-width: 175px;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.buy-criteria-section .buy-section-wrapper .buy-section .buy_section-card div:nth-child(2) {
+    font-family: 'helveticaregular', sans-serif;
+    font-size: 14px;
+    line-height: normal;
+}
+
+/* buy criteria section css end */
+
+
+
+/* plan option table css start */
+.plan-option-table .default-content-wrapper {
+    text-align: center;
+}
+
+.plan-option-table .default-content-wrapper h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.plan-option-table .default-content-wrapper p {
+    font-family: 'HelveticaNeueLTStd-Bd', sans-serif;
+    font-size: 18px;
+    line-height: normal;
+    color: #333;
+    margin-bottom: 32px;
+}
+
+.plan-option-table .table-wrapper .table table p {
+    margin-bottom: 0;
+}
+
+.plan-option-table .table-wrapper .table table tr {
+    border-bottom: 0;
+    border-top: 0;
+}
+
+.plan-option-table .table-wrapper .table table thead tr {
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.plan-option-table .table-wrapper .table table thead tr th:first-child {
+    font-family: 'HelveticaNeueLTStd-Bd', sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.plan-option-table .table-wrapper .table table thead tr th {
+    text-align: center;
+    padding: 0 16px 32px 16px;
+}
+
+.plan-option-table .table-wrapper .table table thead tr th:nth-child(3) strong {
+    border: 1px solid #0073BB;
+}
+
+.plan-option-table .table-wrapper .table table thead tr th p strong {
+    padding: 20px 10px;
+    background-color: #ECF5FA;
+    border-radius: 6px;
+    width: 100%;
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    color: #0073BB;
+    margin-bottom: 16px;
+}
+
+.plan-option-table .table-wrapper .table table thead tr th p:nth-child(2) {
+    font-family: 'HelveticaNeueLTStd-Bd', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #333;
+}
+
+.plan-option-table .table-wrapper .table table tbody tr td {
+    border-bottom: 1px solid #E6E6E6;
+    padding: 18px 30px 32px 30px;
+}
+
+.plan-option-table .table-wrapper .table table tbody tr td:first-child {
+    padding-left: 10px;
+}
+
+.plan-option-table .table-wrapper .table table tbody tr td:first-child p {
+    font-family: 'helveticaregular', sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    color: #333;
+}
+
+.plan-option-table .table-wrapper .table table tbody tr td:first-child strong {
+    font-family: 'HelveticaNeueLTStd-Bd', sans-serif;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.plan-option-table .table-wrapper .table table tbody tr td:not(:first-child),
+.plan-option-table .table-wrapper .table table tbody tr td:not(:first-child) p {
+    font-family: 'helveticaregular', sans-serif;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.plan-option-table .table-wrapper .table table tbody tr td:nth-child(3) {
+    background-color: #ECF5FA;
+}
+
+/* plan option table css end */
+
+
+
+/* buying steps section css start */
+.buying-steps-section{
+    
+}
+
+/* buying steps section css end */
