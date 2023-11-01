@@ -420,4 +420,10 @@ var buy_section_cards = document.querySelectorAll(".buy-criteria-section .buy-se
 for(var i=0; i<buy_section_cards.length; i++){
   buy_section_cards[i].classList.add("buy_section-card");
 }
+
+var buying_steps_cards = document.querySelectorAll(".buying-steps-section .buying-steps-wrapper .buying-steps > div");
+
+for(var i=0; i<buying_steps_cards.length; i++){
+  buying_steps_cards[i].classList.add("buying-steps-card");
+}
 /* Product Page Js End*/
