@@ -372,25 +372,25 @@ let blogSbuBtn = document.querySelector(".blog-form-submit") && StickyFrom();
 
 /* table of content js start */
 
-var table_content_list = document.querySelectorAll(".blog-table-content ul li a") && TableOFContent();
+// var table_content_list = document.querySelectorAll(".blog-table-content ul li a") && TableOFContent();
 
-function TableOFContent(){
-  for(var i=0; i<table_content_list.length; i++){
-    table_content_list[i].addEventListener("click", function(e){
-      e.preventDefault();
-      var href = this.getAttribute("href");
-      var targetElement = document.querySelector(href);
+// function TableOFContent(){
+//   for(var i=0; i<table_content_list.length; i++){
+//     table_content_list[i].addEventListener("click", function(e){
+//       e.preventDefault();
+//       var href = this.getAttribute("href");
+//       var targetElement = document.querySelector(href);
   
-      var target = targetElement.getBoundingClientRect().top + window.scrollY - 100;
+//       var target = targetElement.getBoundingClientRect().top + window.scrollY - 100;
   
-      window.scrollTo({
-        top: target,
-        behavior: 'smooth'
-      });
+//       window.scrollTo({
+//         top: target,
+//         behavior: 'smooth'
+//       });
   
-    });
-  }
-}
+//     });
+//   }
+// }
 /* table of content js end */
 
 
@@ -399,3 +399,25 @@ function TableOFContent(){
 setTimeout(() => {
   lozad().observe();
 }, 1000);
+
+/* Product Page Js Start*/
+var benefits_cards = document.querySelectorAll(".benefits-cards-section .benefits-wrapper .benefits > div");
+
+for(var i=0; i<benefits_cards.length; i++){
+  benefits_cards[i].classList.add("benefits-card");
+}
+
+
+var additional_benefits_cards = document.querySelectorAll(".additional-benefits-section .additional-benefits-wrapper .additional-benefits > div");
+
+for(var i=0; i<additional_benefits_cards.length; i++){
+  additional_benefits_cards[i].classList.add("additional_benefits-card");
+}
+
+
+var buy_section_cards = document.querySelectorAll(".buy-criteria-section .buy-section-wrapper .buy-section > div");
+
+for(var i=0; i<buy_section_cards.length; i++){
+  buy_section_cards[i].classList.add("buy_section-card");
+}
+/* Product Page Js End*/
