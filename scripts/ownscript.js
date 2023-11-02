@@ -426,4 +426,16 @@ var buying_steps_cards = document.querySelectorAll(".buying-steps-section .buyin
 for(var i=0; i<buying_steps_cards.length; i++){
   buying_steps_cards[i].classList.add("buying-steps-card");
 }
+
+var product_importance_cards = document.querySelectorAll(".product-importance-section .product-importance-wrapper .product-importance > div");
+
+for(var i=0; i<product_importance_cards.length; i++){
+  product_importance_cards[i].classList.add("product-importance-cards");
+}
+
+var testimonials_cards = document.querySelectorAll(".testimonial-carousel .testimonial-wrapper .testimonial > div");
+
+for(var i=0; i<testimonials_cards.length; i++){
+  testimonials_cards[i].classList.add("testimonials-cards");
+}
 /* Product Page Js End*/
