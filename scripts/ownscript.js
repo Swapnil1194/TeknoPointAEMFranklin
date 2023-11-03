@@ -438,4 +438,55 @@ var testimonials_cards = document.querySelectorAll(".testimonial-carousel .testi
 for(var i=0; i<testimonials_cards.length; i++){
   testimonials_cards[i].classList.add("testimonials-cards");
 }
+
+var testimonial_slider = document.querySelector(".testimonial-carousel .testimonial-wrapper .testimonial");
+
+
+var testimonial_carousel_wrapper = document.createElement('div');
+testimonial_carousel_wrapper.classList.add("testimonial-carousel-wrapper");
+
+document.querySelector(".testimonial-carousel .testimonial-wrapper").appendChild(testimonial_carousel_wrapper);
+testimonial_carousel_wrapper.appendChild(testimonial_slider);
+
+var carPrevBtn = document.createElement('button');
+carPrevBtn.classList.add('carousel-prev-btn');
+testimonial_carousel_wrapper.appendChild(carPrevBtn);
+
+var carNextBtn = document.createElement('button');
+carNextBtn.classList.add('carousel-next-btn');
+testimonial_carousel_wrapper.appendChild(carNextBtn);
+
+var maxScrollValue;
+var scrollWidth;
+window.addEventListener("scroll", function(){
+  maxScrollValue = testimonial_slider.scrollWidth - testimonial_slider.clientWidth;
+  scrollWidth = document.querySelector(".testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards").offsetWidth + 33;
+});
+
+carNextBtn.addEventListener("click", function(){
+  testimonial_slider.scrollBy({
+    left: +scrollWidth,
+    behavior: "smooth",
+  })
+});
+
+carPrevBtn.addEventListener("click", function(){
+  testimonial_slider.scrollBy({
+    left: -scrollWidth,
+    behavior: "smooth",
+  })
+});
+testimonial_slider.addEventListener("scroll", function(){
+  if(this.scrollLeft == 0){
+    carPrevBtn.style.display = "none";
+  }else{
+    carPrevBtn.style.display = "block";
+  }
+
+  if(Math.round(this.scrollLeft) ==  maxScrollValue || Math.round(this.scrollLeft) == (maxScrollValue - 1) || Math.round(this.scrollLeft) == (maxScrollValue + 1)){
+    carNextBtn.style.display = "none";
+  }else{
+    carNextBtn.style.display = "block";
+  }
+});
 /* Product Page Js End*/
