@@ -1,5 +1,20 @@
 var mobView = window.matchMedia("(max-width: 768px)");
 
+
+/* intersection observer code start*/
+function observeIntersection(element, callback) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const intersecting = entry.isIntersecting;
+      callback(intersecting);
+    });
+  });
+
+  observer.observe(element);
+}
+/* intersection observer code end*/
+
+
 /* Header Footer Start */
 let headerShow = function(url) {
     run(url).then( function(response){
@@ -440,65 +455,51 @@ for(var i=0; i<testimonials_cards.length; i++){
   testimonials_cards[i].classList.add("testimonials-cards");
 }
 
-/*
-var testimonial_slider = document.querySelector(".testimonial-carousel .testimonial-wrapper .testimonial");
+var testimonial_slider = document.querySelector('.testimonial-carousel .testimonial-wrapper');
+
+var testimonial_prev_btn = document.createElement('button');
+testimonial_prev_btn.classList.add('glider-prev');
+testimonial_prev_btn.setAttribute('aria-label', 'Previous');
+testimonial_prev_btn.textContent = "Prev";
+testimonial_slider.appendChild(testimonial_prev_btn);
+
+var testimonial_next_btn = document.createElement('button');
+testimonial_next_btn.classList.add('glider-next');
+testimonial_next_btn.setAttribute('aria-label', 'Next');
+testimonial_next_btn.textContent = "Next";
+testimonial_slider.appendChild(testimonial_next_btn);
 
 
-var testimonial_carousel_wrapper = document.createElement('div');
-testimonial_carousel_wrapper.classList.add("testimonial-carousel-wrapper");
+var testimonial_dots = document.createElement('div');
+testimonial_dots.setAttribute('role', 'tablist');
+testimonial_dots.classList.add('dots');
+testimonial_slider.appendChild(testimonial_dots);
 
-document.querySelector(".testimonial-carousel .testimonial-wrapper").appendChild(testimonial_carousel_wrapper);
-testimonial_carousel_wrapper.appendChild(testimonial_slider);
-
-var carPrevBtn = document.createElement('button');
-carPrevBtn.classList.add('carousel-prev-btn');
-testimonial_carousel_wrapper.appendChild(carPrevBtn);
-
-var carNextBtn = document.createElement('button');
-carNextBtn.classList.add('carousel-next-btn');
-testimonial_carousel_wrapper.appendChild(carNextBtn);
-
-var slideDots = document.createElement('div');
-slideDots.classList.add("slides-dots");
-testimonial_carousel_wrapper.appendChild(slideDots);
-
-var maxScrollValue;
-var scrollWidth;
-window.addEventListener("scroll", function(){
-  var slidesCount = document.querySelectorAll(".testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards");
-  maxScrollValue = testimonial_slider.scrollWidth - testimonial_slider.clientWidth;
-  if(! mobView.matches){
-    scrollWidth = document.querySelector(".testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards").offsetWidth + 33;
-  }else{
-    scrollWidth = document.querySelector(".testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards").offsetWidth + 10;
-  }
+document.addEventListener('scroll', function(){
+  const targetElement = document.querySelector('.testimonial-carousel .testimonial-wrapper .testimonial');
+  observeIntersection(targetElement, intersecting => {
+    if (intersecting) {
+      new Glider(document.querySelector('.testimonial-carousel .testimonial-wrapper .testimonial'),{
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        draggable: true,
+        dots: '.dots',
+        arrows: {
+          prev: '.glider-prev',
+          next: '.glider-next'
+        },
+        responsive:[
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            }
+          }
+        ]
+      });
+    }
+  });
 });
 
-carNextBtn.addEventListener("click", function(){
-  testimonial_slider.scrollBy({
-    left: +scrollWidth,
-    behavior: "smooth",
-  })
-});
-
-carPrevBtn.addEventListener("click", function(){
-  testimonial_slider.scrollBy({
-    left: -scrollWidth,
-    behavior: "smooth",
-  })
-});
-testimonial_slider.addEventListener("scroll", function(){
-  if(this.scrollLeft == 0){
-    carPrevBtn.style.display = "none";
-  }else{
-    carPrevBtn.style.display = "block";
-  }
-
-  if(Math.round(this.scrollLeft) ==  maxScrollValue || Math.round(this.scrollLeft) == (maxScrollValue - 1) || Math.round(this.scrollLeft) == (maxScrollValue + 1)){
-    carNextBtn.style.display = "none";
-  }else{
-    carNextBtn.style.display = "block";
-  }
-}); 
-*/
 /* Product Page Js End*/
