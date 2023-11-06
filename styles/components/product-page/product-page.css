@@ -513,17 +513,17 @@ img {
 
 
 /* product importance section css start */
-.product-importance-section{
+.product-importance-section {
     border-radius: 10px;
     background: #FCF1F4;
     padding: 60px 40px !important;
 }
 
-.product-importance-section .default-content-wrapper{
+.product-importance-section .default-content-wrapper {
     text-align: center;
 }
 
-.product-importance-section .default-content-wrapper h2{
+.product-importance-section .default-content-wrapper h2 {
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     font-weight: 700;
@@ -538,7 +538,7 @@ img {
     row-gap: 20px;
 }
 
-.product-importance-section .product-importance-wrapper .product-importance .product-importance-cards{
+.product-importance-section .product-importance-wrapper .product-importance .product-importance-cards {
     width: 22.5%;
     margin-right: 32px;
     padding: 15px 12px 16px 12px;
@@ -551,15 +551,15 @@ img {
     border-left-width: 4px;
 }
 
-.product-importance-section .product-importance-wrapper .product-importance .product-importance-cards:nth-child(4n){
+.product-importance-section .product-importance-wrapper .product-importance .product-importance-cards:nth-child(4n) {
     margin-right: 0;
 }
 
-.product-importance-section .product-importance-wrapper .product-importance .product-importance-cards div:nth-child(1){
+.product-importance-section .product-importance-wrapper .product-importance .product-importance-cards div:nth-child(1) {
     position: relative;
 }
 
-.product-importance-section .product-importance-wrapper .product-importance .product-importance-cards div:nth-child(1)::after{
+.product-importance-section .product-importance-wrapper .product-importance .product-importance-cards div:nth-child(1)::after {
     position: absolute;
     content: '';
     background: linear-gradient(270deg, rgba(0, 32, 52, 0.00) 0%, rgba(0, 32, 52, 0.18) 49.79%, rgba(0, 32, 52, 0.00) 100%);
@@ -568,7 +568,7 @@ img {
     right: -10px;
 }
 
-.product-importance-section .product-importance-wrapper .product-importance .product-importance-cards div:nth-child(2){
+.product-importance-section .product-importance-wrapper .product-importance .product-importance-cards div:nth-child(2) {
     font-family: 'helveticaregular', sans-serif;
     font-size: 16px;
     line-height: normal;
@@ -576,38 +576,39 @@ img {
     color: #333;
 }
 
-@media screen and (max-width: 768px){
-    .product-importance-section{
+@media screen and (max-width: 768px) {
+    .product-importance-section {
         padding: 32px 20px 32px 20px !important;
     }
 
-    .product-importance-section .default-content-wrapper h2{
+    .product-importance-section .default-content-wrapper h2 {
         font-size: 20px;
         margin-bottom: 24px;
     }
 
-    .product-importance-section .product-importance-wrapper .product-importance{
+    .product-importance-section .product-importance-wrapper .product-importance {
         flex-wrap: unset;
         row-gap: unset;
         overflow-x: scroll;
     }
 
-    .product-importance-section .product-importance-wrapper .product-importance .product-importance-cards{
+    .product-importance-section .product-importance-wrapper .product-importance .product-importance-cards {
         min-width: 230px;
         width: 100%;
         margin-right: 12px;
         padding: 8px 8px 8px 12px;
     }
 
-    .product-importance-section .product-importance-wrapper .product-importance .product-importance-cards div:nth-child(1) img{
+    .product-importance-section .product-importance-wrapper .product-importance .product-importance-cards div:nth-child(1) img {
         width: 32px;
         height: 32px;
     }
 
-    .product-importance-section .product-importance-wrapper .product-importance .product-importance-cards div:nth-child(2){
+    .product-importance-section .product-importance-wrapper .product-importance .product-importance-cards div:nth-child(2) {
         font-size: 14px;
     }
 }
+
 /* product importance section css end */
 
 
@@ -626,7 +627,7 @@ img {
     padding-right: 40px;
 }
 
-.buying-steps-section .buying-steps-wrapper{
+.buying-steps-section .buying-steps-wrapper {
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -739,12 +740,13 @@ img {
         width: 53%;
         text-align: left;
     }
+
     .buying-steps-section .default-content-wrapper {
         padding-left: 0;
         padding-right: 0;
     }
-    
-    .buying-steps-section .buying-steps-wrapper{
+
+    .buying-steps-section .buying-steps-wrapper {
         padding-left: 0;
         padding-right: 0;
     }
@@ -755,23 +757,24 @@ img {
 
 /* testimonial-carousel css end */
 
-.testimonial-carousel{
+.testimonial-carousel {
     background-color: #FCF1F4;
     padding: 40px 0 75px 0 !important;
     max-width: unset !important;
 }
 
-.testimonial-carousel .default-content-wrapper{
+.testimonial-carousel .default-content-wrapper {
     text-align: center;
 }
 
-.testimonial-carousel .default-content-wrapper, .testimonial-carousel .testimonial-wrapper{
+.testimonial-carousel .default-content-wrapper,
+.testimonial-carousel .testimonial-wrapper {
     max-width: 1206px;
     width: 100%;
     margin: 0 auto;
 }
 
-.testimonial-carousel .default-content-wrapper h2{
+.testimonial-carousel .default-content-wrapper h2 {
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     font-weight: 700;
@@ -780,7 +783,7 @@ img {
     color: #333;
 }
 
-.testimonial-carousel .testimonial-wrapper .testimonial{
+.testimonial-carousel .testimonial-wrapper .testimonial {
     display: flex;
     overflow-x: auto;
     padding-top: 32px;
@@ -788,31 +791,31 @@ img {
     padding-right: 1px;
 }
 
-.testimonial-carousel .testimonial-wrapper .testimonial::-webkit-scrollbar{
+.testimonial-carousel .testimonial-wrapper .testimonial::-webkit-scrollbar {
     display: none;
 }
 
-.testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards{
+.testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards {
     min-width: 380px;
     width: 100%;
     border-radius: 10px;
     border: 1px solid #F3BCC8;
-    background:#FFF;
+    background: #FFF;
     box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.10);
     padding: 20px 20px 50px 20px;
     position: relative;
 }
 
-.testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards:last-child{
+.testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards:last-child {
     margin-right: 0;
 }
 
-.testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards div:first-child{
+.testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards div:first-child {
     position: absolute;
     top: -32px;
 }
 
-.testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards div:nth-child(2) p:first-child{
+.testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards div:nth-child(2) p:first-child {
     font-family: 'helveticaregular', sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -822,7 +825,7 @@ img {
     color: #A3A3A3;
 }
 
-.testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards div:nth-child(2) h3{
+.testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards div:nth-child(2) h3 {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -831,18 +834,19 @@ img {
     margin-bottom: 18px;
 }
 
-.testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards div:nth-child(2) p:nth-child(3){
+.testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards div:nth-child(2) p:nth-child(3) {
     font-family: 'helveticaregular', sans-serif;
     font-size: 16px;
     line-height: normal;
     color: #5B5B5B;
+    margin-bottom: 0;
 }
 
-.testimonial-carousel .testimonial-wrapper .testimonial-carousel-wrapper{
+/* .testimonial-carousel .testimonial-wrapper .testimonial-carousel-wrapper {
     position: relative;
-}
+} */
 
-.testimonial-carousel .testimonial-wrapper .testimonial-carousel-wrapper .carousel-prev-btn{
+/* .testimonial-carousel .testimonial-wrapper .testimonial-carousel-wrapper .carousel-prev-btn {
     position: absolute;
     top: calc(50% + 16px);
     left: -22px;
@@ -855,9 +859,9 @@ img {
     cursor: pointer;
     filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.10));
     display: none;
-}
+} */
 
-.testimonial-carousel .testimonial-wrapper .testimonial-carousel-wrapper .carousel-prev-btn::before{
+/* .testimonial-carousel .testimonial-wrapper .testimonial-carousel-wrapper .carousel-prev-btn::before {
     content: '';
     display: inline-block;
     width: 11px;
@@ -869,9 +873,9 @@ img {
     position: absolute;
     top: 15px;
     left: 15px;
-}
+} */
 
-.testimonial-carousel .testimonial-wrapper .testimonial-carousel-wrapper .carousel-next-btn{
+/* .testimonial-carousel .testimonial-wrapper .testimonial-carousel-wrapper .carousel-next-btn {
     position: absolute;
     top: calc(50% + 16px);
     right: -22px;
@@ -883,9 +887,9 @@ img {
     border: 0;
     cursor: pointer;
     filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.10));
-}
+} */
 
-.testimonial-carousel .testimonial-wrapper .testimonial-carousel-wrapper .carousel-next-btn::before{
+/* .testimonial-carousel .testimonial-wrapper .testimonial-carousel-wrapper .carousel-next-btn::before {
     content: '';
     display: inline-block;
     width: 11px;
@@ -897,5 +901,54 @@ img {
     position: absolute;
     top: 15px;
     left: 13px;
+} */
+
+@media screen and (max-width: 768px) {
+    .testimonial-carousel .default-content-wrapper h2 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .testimonial-carousel {
+        padding: 40px 20px 32px 20px !important;
+    }
+
+    .testimonial-carousel .testimonial-wrapper .testimonial {
+        column-gap: 10px;
+    }
+
+    .testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards {
+        min-width: 290px;
+        padding: 12px 20px 20px 20px;
+    }
+
+    .testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards div:first-child {
+        top: -23px
+    }
+
+    .testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards div:first-child img {
+        width: 46px;
+        height: 46px;
+    }
+
+    .testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards div:nth-child(2) p:first-child {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    .testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards div:nth-child(2) h3 {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards div:nth-child(2) p:nth-child(3) {
+        font-size: 14px;
+    }
+
+    /* .testimonial-carousel .testimonial-wrapper .testimonial-carousel-wrapper .carousel-prev-btn,
+    .testimonial-carousel .testimonial-wrapper .testimonial-carousel-wrapper .carousel-next-btn {
+        display: none;
+    } */
 }
+
 /* testimonial-carousel css end */
