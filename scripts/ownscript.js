@@ -460,13 +460,11 @@ var testimonial_slider = document.querySelector('.testimonial-carousel .testimon
 var testimonial_prev_btn = document.createElement('button');
 testimonial_prev_btn.classList.add('glider-prev');
 testimonial_prev_btn.setAttribute('aria-label', 'Previous');
-testimonial_prev_btn.textContent = "Prev";
 testimonial_slider.appendChild(testimonial_prev_btn);
 
 var testimonial_next_btn = document.createElement('button');
 testimonial_next_btn.classList.add('glider-next');
 testimonial_next_btn.setAttribute('aria-label', 'Next');
-testimonial_next_btn.textContent = "Next";
 testimonial_slider.appendChild(testimonial_next_btn);
 
 
