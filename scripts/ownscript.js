@@ -500,4 +500,11 @@ document.addEventListener('scroll', function(){
   });
 });
 
+
+
+var claim_process_cards = document.querySelectorAll(".claim-process-section .claim-steps-wrapper .claim-steps > div");
+
+for(var i=0; i<claim_process_cards.length; i++){
+  claim_process_cards[i].classList.add("claim-process-cards");
+}
 /* Product Page Js End*/

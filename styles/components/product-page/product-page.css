@@ -755,7 +755,202 @@ img {
 /* buying steps section css end */
 
 
-/* testimonial-carousel css end */
+
+/* claim process css start */
+
+.claim-process-section{
+    background-color: #ECF5FA;
+    max-width: unset !important;
+    padding: 60px 0 !important;
+}
+
+.claim-process-section .default-content-wrapper, .claim-process-section .claim-steps-wrapper{
+    max-width: 883px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.claim-process-section .default-content-wrapper{
+    text-align: center;
+}
+
+.claim-process-section .default-content-wrapper h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.claim-process-section .claim-steps-wrapper .claim-steps{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.claim-process-section .claim-steps-wrapper .claim-steps .claim-process-cards{
+    width: 21.5%;
+    text-align: center;
+    position: relative;
+}
+
+.claim-process-section .claim-steps-wrapper .claim-steps .claim-process-cards::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 7px;
+    background-color: #4D9DCF;
+    display: inline-block;
+    top: 26.5px;
+    left: calc(50% + 29px);
+    z-index: 1;
+}
+
+.claim-process-section .claim-steps-wrapper .claim-steps .claim-process-cards:last-child::after{
+    content: none;
+}
+
+.claim-process-section .claim-steps-wrapper .claim-steps .claim-process-cards::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 7px;
+    background-color: #4D9DCF;
+    display: inline-block;
+    top: 26.5px;
+    right: calc(50% + 29px);
+    z-index: 1;
+}
+
+.claim-process-section .claim-steps-wrapper .claim-steps .claim-process-cards:first-child::before{
+    content: none;
+}
+
+.claim-process-section .claim-steps-wrapper .claim-steps .claim-process-cards div:first-child{
+    width: 60px;
+    height: 60px;
+    background-color: #4D9DCF;
+    position: relative;
+    border-radius: 50%;
+    text-align: center;
+    padding: 12px 0;
+    margin-bottom: 12px;
+    display: inline-block;
+    z-index: 2;
+}
+
+.claim-process-section .claim-steps-wrapper .claim-steps .claim-process-cards div:first-child h4{
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+    color: #FFF;
+    margin-bottom: 0;
+}
+
+.claim-process-section .claim-steps-wrapper .claim-steps .claim-process-cards div:nth-child(2){
+    font-size: 16px;
+    color: #333;
+    font-family: 'helveticaregular', sans-serif;
+    line-height: normal;
+}
+
+.claim-process-section .claim-steps-wrapper .claim-steps .claim-process-cards div:nth-child(2) p{
+    margin-bottom: 0;
+    font-family: 'helveticaregular', sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    color: #333;
+}
+
+.claim-process-section .claim-steps-wrapper .claim-steps .claim-process-cards div:nth-child(2) .button-container{
+    margin-bottom: 8px;
+}
+
+.claim-process-section .claim-steps-wrapper .claim-steps .claim-process-cards div:nth-child(2) .button-container a{
+    display: inline-block;
+    padding: 11px 13px;
+    border-radius: 6px;
+    background: #D62049;
+    font-family: 'HelveticaNeueLTStd-Bd', sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    color: #FFF;
+}
+
+@media screen and (max-width: 768px){
+    .claim-process-section{
+        padding: 32px 0 40px 0 !important;
+    }
+
+    .claim-process-section .default-content-wrapper, .claim-process-section .claim-steps-wrapper{
+        padding: 0 20px;
+    }
+
+    .claim-process-section .default-content-wrapper h2{
+        font-size: 20px;
+        margin-bottom: 32px;
+    }
+
+    .claim-process-section .claim-steps-wrapper .claim-steps{
+        flex-direction: column;
+        row-gap: 33px;
+
+    }
+
+    .claim-process-section .claim-steps-wrapper .claim-steps .claim-process-cards{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        column-gap: 32px;
+        text-align: left;
+    }
+    
+    .claim-process-section .claim-steps-wrapper .claim-steps .claim-process-cards div:first-child{
+        width: 36px;
+        height: 36px;
+        padding: 10px 0;
+        margin-bottom: 0;
+    }
+
+    .claim-process-section .claim-steps-wrapper .claim-steps .claim-process-cards div:first-child h4{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .claim-process-section .claim-steps-wrapper .claim-steps .claim-process-cards div:nth-child(2){
+        width: 47%;
+        font-size: 14px;
+    }
+
+    .claim-process-section .claim-steps-wrapper .claim-steps .claim-process-cards div:nth-child(2) .button-container a{
+        padding: 9px 13px;
+    }
+
+    .claim-process-section .claim-steps-wrapper .claim-steps .claim-process-cards div:nth-child(2) p{
+        font-size: 14px;
+    }
+
+    .claim-process-section .claim-steps-wrapper .claim-steps .claim-process-cards::before{
+        content: none;
+    }
+
+    .claim-process-section .claim-steps-wrapper .claim-steps .claim-process-cards::after{
+        width: 4px;
+        height: calc(100% + 33px);
+        left: 16px;
+        top: 0;
+    }
+
+
+}
+/* claim process css end */
+
+
+
+/* testimonial-carousel css start */
 
 .testimonial-carousel {
     background-color: #FCF1F4;
