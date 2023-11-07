@@ -478,7 +478,7 @@ document.addEventListener('scroll', function(){
   observeIntersection(targetElement, intersecting => {
     if (intersecting) {
       new Glider(document.querySelector('.testimonial-carousel .testimonial-wrapper .testimonial'),{
-        slidesToShow: 1,
+        slidesToShow: 1.13,
         slidesToScroll: 1,
         draggable: true,
         dots: '.dots',
