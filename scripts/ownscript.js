@@ -507,4 +507,10 @@ var claim_process_cards = document.querySelectorAll(".claim-process-section .cla
 for(var i=0; i<claim_process_cards.length; i++){
   claim_process_cards[i].classList.add("claim-process-cards");
 }
+
+var claim_column_cards = document.querySelectorAll(".claim-process-section .columns-wrapper .columns > div");
+
+for(var i=0; i<claim_column_cards.length; i++){
+  claim_column_cards[i].classList.add("claim-column-card");
+}
 /* Product Page Js End*/
