@@ -1268,3 +1268,37 @@ img {
 }
 
 /* testimonial-carousel css end */
+
+
+/* download section css start*/
+.download-section{
+    background-color: #ECF5FA;
+    border-radius: 10px;
+}
+
+.download-section .columns-wrapper{
+    padding: 40px 120px 45px 120px;
+}
+
+.download-section .columns-wrapper .columns > div{
+    display: flex;
+    align-items: flex-start;
+}
+
+.download-section .columns-wrapper .columns > div > div{
+    width: 50%;
+}
+
+.download-section .columns-wrapper .columns > div div:nth-child(1) h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+.download-section .columns-wrapper .columns > div div:nth-child(1) ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* download section css end*/
