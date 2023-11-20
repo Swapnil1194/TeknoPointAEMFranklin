@@ -1283,10 +1283,12 @@ img {
 .download-section .columns-wrapper .columns > div{
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
-.download-section .columns-wrapper .columns > div > div{
-    width: 50%;
+.download-section .columns-wrapper .columns > div div:nth-child(1){
+    width: 40%;
+    flex: unset;
 }
 
 .download-section .columns-wrapper .columns > div div:nth-child(1) h3{
@@ -1295,10 +1297,116 @@ img {
     font-weight: 700;
     line-height: normal;
     margin-bottom: 24px;
+    color: #333;
 }
 
 .download-section .columns-wrapper .columns > div div:nth-child(1) ul{
     display: flex;
     flex-wrap: wrap;
+}
+
+.download-section .columns-wrapper .columns > div div:nth-child(1) ul li{
+    width: 40%;
+    margin-right: 20px;
+    display: flex;
+    align-self: center;
+    padding: 13px 20px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.10);
+}
+
+.download-section .columns-wrapper .columns > div div:nth-child(1) ul li a{
+    color: #333;
+    font-family: 'helveticaregular', sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    width: 76%;
+}
+
+.download-section .columns-wrapper .columns > div div:nth-child(1) ul li picture img{
+    width: 35px;
+    height: 37px;
+}
+
+.download-section .columns-wrapper .columns > div div:nth-child(2){
+    width: 38%;
+    flex: unset;
+    position: relative;
+}
+
+.download-section .columns-wrapper .columns > div div:nth-child(2)::before{
+    position: absolute;
+    left: -35%;
+    content: '';
+    height: 100%;
+    width: 1px;
+    background: linear-gradient(0deg, rgba(0, 32, 52, 0.00) 0%, rgba(0, 32, 52, 0.18) 49.79%, rgba(0, 32, 52, 0.00) 100%);
+}
+
+.download-section .columns-wrapper .columns > div div:nth-child(2) h5{
+    color: #333;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.download-section .columns-wrapper .columns > div div:nth-child(2) .button-container a{
+    display: inline-block;
+    padding: 17px 32px;
+    border-radius: 6px;
+    background: #D62049;
+    color: #FFF;
+    font-family: 'HelveticaNeueLTStd-Md', sans-serif;
+    font-size: 20px;
+    line-height: normal;
+}
+
+@media screen and (max-width: 768px){
+    .download-section .columns-wrapper{
+        padding: 32px 0;
+    }
+
+    .download-section .columns-wrapper .columns > div{
+        row-gap: 36px;
+    }
+
+    .download-section .columns-wrapper .columns > div div:nth-child(1){
+        width: 100%;
+    }
+
+    .download-section .columns-wrapper .columns > div div:nth-child(1) h3{
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .download-section .columns-wrapper .columns > div div:nth-child(2){
+        width: 100%;
+    }
+
+    .download-section .columns-wrapper .columns > div div:nth-child(1) ul {
+        column-gap: 9px;
+        row-gap: 10px;
+    }
+
+    .download-section .columns-wrapper .columns > div div:nth-child(1) ul li{
+        width: 48.5%;
+        margin-right: 0;
+        padding: 12px 16px;
+        align-items: center;
+    }
+
+    .download-section .columns-wrapper .columns > div div:nth-child(1) ul li a{
+        font-size: 12px;
+    }
+
+    .download-section .columns-wrapper .columns > div div:nth-child(1) ul li picture img{
+        width: 29px;
+        height: 31px;
+    }
 }
 /* download section css end*/
