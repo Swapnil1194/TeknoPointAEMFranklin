@@ -417,6 +417,30 @@ setTimeout(() => {
 }, 1000);
 
 /* Product Page Js Start*/
+
+document.querySelector(".banner-form-section .banner-content-wrapper .banner-content div:nth-child(1)").classList.add('banner-product-name');
+
+document.querySelector(".banner-form-section .banner-content-wrapper .banner-content div:nth-child(2)").classList.add('banner-product-title');
+
+document.querySelector(".banner-form-section .banner-content-wrapper .banner-content div:nth-child(3)").classList.add('banner-product-subtitle');
+
+document.querySelector(".banner-form-section .banner-content-wrapper .banner-content div:nth-child(4)").classList.add('banner-product-cta');
+
+document.querySelector(".banner-form-section .banner-content-wrapper .banner-content div:nth-child(5)").classList.add('banner-product-benefits');
+
+document.querySelector(".banner-form-section .banner-content-wrapper .banner-content div:nth-child(6)").classList.add('banner-product-img');
+
+var banner_content_sec = document.querySelector(".banner-form-section .banner-content-wrapper");
+
+var banner_form_sec = document.querySelector(".banner-form-section .form-wrapper");
+
+var banner_form_section_wrapper = document.createElement("div");
+banner_form_section_wrapper.classList.add("banner-form-section-wrapper", "container");
+banner_form_section_wrapper.appendChild(banner_content_sec);
+banner_form_section_wrapper.appendChild(banner_form_sec);
+
+document.querySelector(".banner-form-section").appendChild(banner_form_section_wrapper);
+
 var benefits_cards = document.querySelectorAll(".benefits-cards-section .benefits-wrapper .benefits > div");
 
 for(var i=0; i<benefits_cards.length; i++){

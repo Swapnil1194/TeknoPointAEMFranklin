@@ -61,6 +61,245 @@ img {
 /* product-page common styling end*/
 
 
+/* product-banner css start */
+    .banner-form-section{
+        background-color: #ECF5FA;
+        max-width: unset !important;
+    }
+
+    .banner-form-section .banner-form-section-wrapper{
+        display: flex;
+        align-items: center;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .banner-content-wrapper{
+        width: 60%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .banner-product-img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .banner-content-wrapper .banner-content .banner-product-name div p:nth-child(1){
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+        margin-bottom: 10px;
+        color: #333;
+        font-family: 'HelveticaNeueLTStd-Bd', sans-serif;
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .banner-content-wrapper .banner-content .banner-product-name div p:nth-child(1) strong{
+        padding: 6px 12px;
+        border-radius: 100px;
+        border: 1px solid #F3BCC8;
+        background: #FCF1F4;
+        color:#333;
+        font-family: 'helveticaregular', sans-serif;
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .banner-content-wrapper .banner-content .banner-product-name div p:nth-child(2){
+        color: #5B5B5B;
+        font-family: 'helveticaregular', sans-serif;
+        font-size: 10px;
+        line-height: normal;
+        margin-bottom: 0;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .banner-content-wrapper .banner-content .banner-product-name,
+    .banner-form-section .banner-form-section-wrapper .banner-content-wrapper .banner-content .banner-product-title,
+    .banner-form-section .banner-form-section-wrapper .banner-content-wrapper .banner-content .banner-product-subtitle,
+    .banner-form-section .banner-form-section-wrapper .banner-content-wrapper .banner-content .banner-product-cta,
+    .banner-form-section .banner-form-section-wrapper .banner-content-wrapper .banner-product-benefits{
+        width: 70%;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .banner-content-wrapper .banner-content .banner-product-name{
+        margin-bottom: 30px;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .banner-content-wrapper .banner-content .banner-product-title h2{
+        color:#333;
+        font-family: 'Inter', sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 44px;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .banner-content-wrapper .banner-content .banner-product-subtitle div{
+        color: #5B5B5B;
+        font-family: 'helveticaregular', sans-serif;
+        font-size: 18px;
+        line-height: 120%; /* 21.6px */
+        width: 60%;
+        position: relative;
+        margin-left: 15px;
+        margin-bottom: 40px;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .banner-content-wrapper .banner-content .banner-product-subtitle div::before{
+        content: '';
+        position: absolute;
+        width: 4px;
+        height: 100%;
+        background-color: #D62049;
+        left: -15px;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .banner-content-wrapper .banner-content .banner-product-cta p:nth-child(1){
+        font-family:  'helveticaregular', sans-serif;
+        font-size: 16px;
+        line-height: normal;
+        margin-bottom: 12px;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .banner-content-wrapper .banner-content .banner-product-cta p.button-container{
+        margin-bottom: 0;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .banner-content-wrapper .banner-content .banner-product-cta p.button-container a{
+        padding: 11px 32px;
+        text-align: center;
+        border-radius: 6px;
+        border: 2px solid #0073BB;
+        display: inline-block;
+        color: var(--primary-blue, #0073BB);
+        font-family: 'HelveticaNeueLTStd-Md', sans-serif;
+        font-size: 20px;
+        line-height: normal;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .banner-content-wrapper .banner-content .banner-product-cta{
+        margin-bottom: 60px;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .banner-content-wrapper .banner-product-benefits ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .banner-content-wrapper .banner-product-benefits ul li{
+        max-width: 157px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 24px 8px 16px 8px;
+        border-radius: 180px 180px 10px 10px;
+        border: 1px solid #B3D5EB;
+        background:  #FFF;
+        box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.10);
+        font-family: 'helveticaregular', sans-serif;;
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .banner-content-wrapper .banner-product-benefits ul li img{
+        width: 64px;
+        height: 64px;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .banner-content-wrapper .banner-product-benefits ul li strong{
+        font-family: 'HelveticaNeueLTStd-Bd', sans-serif;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .form-wrapper{
+        width: 40%;
+        padding: 40px;
+        background:#FFF;
+        box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.10);
+    }
+
+    .banner-form-section .banner-form-section-wrapper .form-wrapper h3{
+        color: #333;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 32px;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .form-wrapper form .form-radio-wrapper input[type="radio"]{
+        appearance: none;
+        -webkit-appearance: none;
+        max-width: unset;
+        width: unset;
+        margin: 0;
+        padding: 0;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .form-wrapper form .form-text-field-wrapper input{
+        padding: 17px 16px;
+        outline: 0;
+        border: 1px solid #A3A3A3;
+        border-radius: 6px;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .form-wrapper form .form-text-field-wrapper input::placeholder{
+        color: #D3D3D3;
+        font-family: 'HelveticaNeueLTStd-Bd', sans-serif;
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .form-wrapper form .form-text-field-wrapper input{
+        color: #333;
+        font-family: 'HelveticaNeueLTStd-Bd', sans-serif;
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .form-wrapper form .form-text-field-wrapper, 
+    .banner-form-section .banner-form-section-wrapper .form-wrapper form .form-select-wrapper{
+        margin-bottom: 40px;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .form-wrapper form .form-text-field-wrapper label, 
+    .banner-form-section .banner-form-section-wrapper .form-wrapper form .form-select-wrapper label{
+        display: none;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .form-wrapper form .form-select-wrapper select{
+        padding: 17px 16px;
+        color: #333;
+        font-family: 'HelveticaNeueLTStd-Bd', sans-serif;
+        font-size: 18px;
+        line-height: normal;
+        outline: 0;
+        border: 1px solid #A3A3A3;
+        border-radius: 6px;
+    }
+
+    .banner-form-section .banner-form-section-wrapper .form-wrapper form .form-submit-wrapper button{
+        width: 100%;
+        display: block;
+        padding: 17px 32px;
+        text-align: center;
+        border-radius: 6px;
+        background: #D62049;
+        outline: 0;
+        border: 0;
+        color: var(--neutral-white, #FFF);
+        font-family: 'HelveticaNeueLTStd-Md', sans-serif;
+        font-size: 20px;
+        line-height: normal;
+    }
+/* product-banner css end */
+
 /* benefits section css start */
 .benefits-cards-section .default-content-wrapper {
     text-align: center;
