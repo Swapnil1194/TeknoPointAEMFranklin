@@ -1,3 +1,20 @@
+var mobView = window.matchMedia("(max-width: 768px)");
+
+
+/* intersection observer code start*/
+function observeIntersection(element, callback) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const intersecting = entry.isIntersecting;
+      callback(intersecting);
+    });
+  });
+
+  observer.observe(element);
+}
+/* intersection observer code end*/
+
+
 /* Header Footer Start */
 let headerShow = function(url) {
     run(url).then( function(response){
@@ -353,7 +370,6 @@ let blogSbuBtn = document.querySelector(".blog-form-submit") && StickyFrom();
     var blogFormPos = document.querySelector('.form').offsetTop;
     var faqPos = document.querySelector('.blog-faq').offsetTop;
   
-    var mobView = window.matchMedia("(max-width: 768px)");
     if(! mobView.matches){
       window.addEventListener("scroll", function(){
         var scrollPos = this.scrollY;
@@ -401,6 +417,30 @@ setTimeout(() => {
 }, 1000);
 
 /* Product Page Js Start*/
+
+document.querySelector(".banner-form-section .banner-content-wrapper .banner-content div:nth-child(1)").classList.add('banner-product-name');
+
+document.querySelector(".banner-form-section .banner-content-wrapper .banner-content div:nth-child(2)").classList.add('banner-product-title');
+
+document.querySelector(".banner-form-section .banner-content-wrapper .banner-content div:nth-child(3)").classList.add('banner-product-subtitle');
+
+document.querySelector(".banner-form-section .banner-content-wrapper .banner-content div:nth-child(4)").classList.add('banner-product-cta');
+
+document.querySelector(".banner-form-section .banner-content-wrapper .banner-content div:nth-child(5)").classList.add('banner-product-benefits');
+
+document.querySelector(".banner-form-section .banner-content-wrapper .banner-content div:nth-child(6)").classList.add('banner-product-img');
+
+var banner_content_sec = document.querySelector(".banner-form-section .banner-content-wrapper");
+
+var banner_form_sec = document.querySelector(".banner-form-section .form-wrapper");
+
+var banner_form_section_wrapper = document.createElement("div");
+banner_form_section_wrapper.classList.add("banner-form-section-wrapper", "container");
+banner_form_section_wrapper.appendChild(banner_content_sec);
+banner_form_section_wrapper.appendChild(banner_form_sec);
+
+document.querySelector(".banner-form-section").appendChild(banner_form_section_wrapper);
+
 var benefits_cards = document.querySelectorAll(".benefits-cards-section .benefits-wrapper .benefits > div");
 
 for(var i=0; i<benefits_cards.length; i++){
@@ -439,54 +479,62 @@ for(var i=0; i<testimonials_cards.length; i++){
   testimonials_cards[i].classList.add("testimonials-cards");
 }
 
-var testimonial_slider = document.querySelector(".testimonial-carousel .testimonial-wrapper .testimonial");
+var testimonial_slider = document.querySelector('.testimonial-carousel .testimonial-wrapper');
+
+var testimonial_prev_btn = document.createElement('button');
+testimonial_prev_btn.classList.add('glider-prev');
+testimonial_prev_btn.setAttribute('aria-label', 'Previous');
+testimonial_slider.appendChild(testimonial_prev_btn);
+
+var testimonial_next_btn = document.createElement('button');
+testimonial_next_btn.classList.add('glider-next');
+testimonial_next_btn.setAttribute('aria-label', 'Next');
+testimonial_slider.appendChild(testimonial_next_btn);
 
 
-var testimonial_carousel_wrapper = document.createElement('div');
-testimonial_carousel_wrapper.classList.add("testimonial-carousel-wrapper");
+var testimonial_dots = document.createElement('div');
+testimonial_dots.setAttribute('role', 'tablist');
+testimonial_dots.classList.add('dots');
+testimonial_slider.appendChild(testimonial_dots);
 
-document.querySelector(".testimonial-carousel .testimonial-wrapper").appendChild(testimonial_carousel_wrapper);
-testimonial_carousel_wrapper.appendChild(testimonial_slider);
-
-var carPrevBtn = document.createElement('button');
-carPrevBtn.classList.add('carousel-prev-btn');
-testimonial_carousel_wrapper.appendChild(carPrevBtn);
-
-var carNextBtn = document.createElement('button');
-carNextBtn.classList.add('carousel-next-btn');
-testimonial_carousel_wrapper.appendChild(carNextBtn);
-
-var maxScrollValue;
-var scrollWidth;
-window.addEventListener("scroll", function(){
-  maxScrollValue = testimonial_slider.scrollWidth - testimonial_slider.clientWidth;
-  scrollWidth = document.querySelector(".testimonial-carousel .testimonial-wrapper .testimonial .testimonials-cards").offsetWidth + 33;
+document.addEventListener('scroll', function(){
+  const targetElement = document.querySelector('.testimonial-carousel .testimonial-wrapper .testimonial');
+  observeIntersection(targetElement, intersecting => {
+    if (intersecting) {
+      new Glider(document.querySelector('.testimonial-carousel .testimonial-wrapper .testimonial'),{
+        slidesToShow: 1.13,
+        slidesToScroll: 1,
+        draggable: true,
+        dots: '.dots',
+        arrows: {
+          prev: '.glider-prev',
+          next: '.glider-next'
+        },
+        responsive:[
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            }
+          }
+        ]
+      });
+    }
+  });
 });
 
-carNextBtn.addEventListener("click", function(){
-  testimonial_slider.scrollBy({
-    left: +scrollWidth,
-    behavior: "smooth",
-  })
-});
 
-carPrevBtn.addEventListener("click", function(){
-  testimonial_slider.scrollBy({
-    left: -scrollWidth,
-    behavior: "smooth",
-  })
-});
-testimonial_slider.addEventListener("scroll", function(){
-  if(this.scrollLeft == 0){
-    carPrevBtn.style.display = "none";
-  }else{
-    carPrevBtn.style.display = "block";
-  }
 
-  if(Math.round(this.scrollLeft) ==  maxScrollValue || Math.round(this.scrollLeft) == (maxScrollValue - 1) || Math.round(this.scrollLeft) == (maxScrollValue + 1)){
-    carNextBtn.style.display = "none";
-  }else{
-    carNextBtn.style.display = "block";
-  }
-});
+var claim_process_cards = document.querySelectorAll(".claim-process-section .claim-steps-wrapper .claim-steps > div");
+
+for(var i=0; i<claim_process_cards.length; i++){
+  claim_process_cards[i].classList.add("claim-process-cards");
+}
+
+var claim_column_cards = document.querySelectorAll(".claim-process-section .columns-wrapper .columns > div");
+
+for(var i=0; i<claim_column_cards.length; i++){
+  claim_column_cards[i].classList.add("claim-column-card");
+}
 /* Product Page Js End*/
